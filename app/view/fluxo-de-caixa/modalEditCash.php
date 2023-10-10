@@ -81,14 +81,14 @@
                                 <div class="form-group col-sm-4 m-0">
                                     <label for="editar_valortit" class="col-form-label s-12">Valor do Título</label>
                                     <input type="text" name="editar_valortit" id="editar_valortit"
-                                         class="form-control r-0 light s-12"
+                                         class="money form-control r-0 light s-12"
                                         value="" required>
                                 </div>
 
                                 <div class="form-group col-sm-4 m-0">
                                     <label for="editar_valorpgto" class="col-form-label s-12">Valor Pago</label>
                                     <input type="text" name="editar_valorpgto" id="editar_valorpgto"
-                                         class="form-control r-0 light s-12"
+                                         class="money form-control r-0 light s-12"
                                         value="" required>
                                 </div>
 

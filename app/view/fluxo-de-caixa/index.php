@@ -237,6 +237,23 @@ include_once($path);
         <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.html5.min.js"></script>
         <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.print.min.js"></script>
 
+
+        <!-- Mascaras  -->
+        <script src="js/jquery.mask.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/jquery-maskmoney.js"></script>
+        
+        <script>
+        $(document).ready(function() {
+            $(".money").maskMoney({
+                prefix: "R$ ",
+                decimal: ",",
+                thousands: "."
+            });
+        });
+        </script>
+        
+        
         <script>
         function loading_unisen() {
             document.getElementsByClassName('box-load')[0].style.display = 'none';

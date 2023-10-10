@@ -107,6 +107,10 @@ SELECT `Cliente/Fornecedor`, `Vencimento`,`Data Pgto`, SUM(`Valor Titulo`), SUM(
 -- SOMA DOS ULTIMOS RECEBIMENTOS NO MÊS DE SETEMBRO, AGRUPADOS PELO DIA DA DATA DE PAGAMENTO
 SELECT `Vencimento`,`Data Pgto`,SUM(`Valor Titulo`) as total_vtitulo, SUM(`Valor Pago`) as total_vpgto FROM `cash2` WHERE `Data Pgto` BETWEEN '2023-09-01' AND '2023-09-31' GROUP BY `Data Pgto` ORDER BY `Data Pgto` DESC;
 
+
+
+
+
 -- cria a tabela cash_teste formatando os campos errados
 INSERT INTO cash_teste
 SELECT `ID`,`Mês`,`Tipo`,`NF/CPF`,`Cliente/Fornecedor`,`Centro de Custo`,`Plano de Contas`,`Banco`,STR_TO_DATE(`Vencimento`, '%d/%m/%Y') as fvencimento,STR_TO_DATE(`Data Pgto`, '%d/%m/%Y') as fdatapgto, REPLACE(`Valor Titulo`,'.','') AS valor_titulo, REPLACE(`Valor Pago`,'.','') as valor_pago,`Detalhe`

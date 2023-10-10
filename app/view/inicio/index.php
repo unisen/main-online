@@ -272,7 +272,7 @@ include_once($path);
                                             </div>
 
                                             <div class="col-md-9" style="height: 350px">
-                                                <!-- <canvas data-chart="line" data-dataset="[
+                                                <canvas data-chart="line" data-dataset="[
                                                             [0, 15, 4, 30, 8, 5, 18],
                                                             [1, 7, 21, 4, 12, 5, 10],
                                                 
@@ -350,14 +350,14 @@ include_once($path);
                                                                         }
                                                                     }
                                                                 }">
-                                                </canvas> -->
-                                                <div style="height: 450px">
+                                                </canvas>
+                                                <!-- <div style="height: 450px">
                                                     <canvas data-chart="line"
                                                         data-dataset="[[0,528,228,728,528,1628,0]]"
                                                         data-labels="['Blue','Yellow','Green','Purple','Orange','Red','Indigo']"
                                                         data-dataset-options="[{ label:'Sales', borderColor:  'rgba(255,99,132,1)', backgroundColor: 'rgba(255, 99, 132, 0.2)'}]">
                                                     </canvas>
-                                                </div>
+                                                </div> -->
 
                                             </div>
                                         </div>
