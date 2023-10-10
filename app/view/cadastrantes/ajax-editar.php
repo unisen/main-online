@@ -644,7 +644,7 @@ function cria_contrato_cadastrante(userid, contrato) {
                     confirmButtonText: 'OK'
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        downloadURI(contrato,'unisen-contrato');
+                        downloadURI(contrato,'<?php echo "$perfil->id-$perfil->nome_completo"; ?>');
                         //location.reload();
                         //$('#enviar_mensagem').modal('toggle');
                         //$('#enviar_mensagem').find('input').val('');
