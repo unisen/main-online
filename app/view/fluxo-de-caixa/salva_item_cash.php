@@ -1,5 +1,12 @@
 <?php session_start();
 
+function moneyField($str)
+{
+  $str = str_replace("R$ ","",$str);
+  $str = str_replace(".","",$str);
+  $str = str_replace(",",".",$str);  
+  return trim($str);
+}
 
     if (isset($_POST)) {        
 
@@ -15,15 +22,17 @@
 
         $vencimento = $_POST['editar_vencimento'];
         $datapgto = $_POST['editar_datapgto'];
-        $valortit = $_POST['editar_valortit'];
 
-        $valorpgto = $_POST['editar_valorpgto'];
+        $valortit = moneyField($_POST['editar_valortit']);
+        
+
+        $valorpgto = moneyField($_POST['editar_valorpgto']);
         $detalhe = $_POST['editar_detalhe'];
         
            
         require_once '../../config/database/conexao-unisen.php';   
 
-        $sql = "UPDATE `cash` SET `Mês`='$mes',`Tipo`='$tipo',`NF/CPF`='$nfcpf',`Cliente/Fornecedor`='$cliente',`Centro de Custo`='$ccusto',`Plano de Contas`='$pcontas',`Banco`='$banco',`Vencimento`='$vencimento',`Data Pgto`='$datapgto',`Valor Titulo`='$valortit',`Valor Pago`='$valorpgto',`Detalhe`='$detalhe' WHERE `ID` = '$id'";
+        $sql = "UPDATE `cash2` SET `Mês`='$mes',`Tipo`='$tipo',`NF/CPF`='$nfcpf',`Cliente/Fornecedor`='$cliente',`Centro de Custo`='$ccusto',`Plano de Contas`='$pcontas',`Banco`='$banco',`Vencimento`='$vencimento',`Data Pgto`='$datapgto',`Valor Titulo`='$valortit',`Valor Pago`='$valorpgto',`Detalhe`='$detalhe' WHERE `ID` = '$id'";
 
         //echo $sql;
         $resposta = mysqli_query ($con_unisen, $sql);       

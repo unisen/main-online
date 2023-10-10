@@ -399,6 +399,54 @@ include_once($path);
         }
         </script>
 
+<script>
+        function adiciona_item_cash() {
+
+           var valorTitulo = $('#add_valortit').val(); 
+           alert(valorTitulo);
+           
+
+           /*  $.ajax({
+                method: "POST",
+                url: "salva_item_cash.php",
+                data: $("#editar_financeiro").serialize(),
+                dataType: "text",
+                success: function(strMessage) {
+                    $("#message").text(strMessage);
+                    if ($.trim(strMessage) == 'sucesso') {
+                        Swal.fire({
+                            title: '',
+                            text: "Dados atualizados",
+                            icon: 'success',
+                            confirmButtonColor: '#3085d6',
+                            cancelButtonColor: '#d33',
+                            confirmButtonText: 'OK'
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                //location.reload();
+                                //alert('ok');
+                                //location.href = "confirmacao-cadastro.php";
+                                //$('.btn-proximo2').css("display", "initial");
+                                //$("#btn-proximo2").removeAttr("disabled");
+                                //$("#btn-proximo2").removeClass("btn-proximo2");
+                                //$('#enviar_mensagem').find('input').val('');
+                            }
+                        })
+                    } else {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: strMessage,
+
+                        });
+
+                    }
+                }
+
+            }); */
+        }
+        </script>
+
         <!--
 --- Footer Part - Use Jquery anywhere at page.
 --- http://writing.colin-gourlay.com/safely-using-ready-before-including-jquery/

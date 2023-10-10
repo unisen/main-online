@@ -81,14 +81,14 @@
                                 <div class="form-group col-sm-4 m-0">
                                     <label for="add_valortit" class="col-form-label s-12">Valor do Título</label>
                                     <input type="text" name="add_valortit" id="add_valortit"
-                                         class="form-control r-0 light s-12"
+                                         class="money form-control r-0 light s-12"
                                         value="" required>
                                 </div>
 
                                 <div class="form-group col-sm-4 m-0">
                                     <label for="add_valorpgto" class="col-form-label s-12">Valor Pago</label>
                                     <input type="text" name="add_valorpgto" id="add_valorpgto"
-                                         class="form-control r-0 light s-12"
+                                         class="money form-control r-0 light s-12"
                                         value="" required>
                                 </div>
 
@@ -107,7 +107,7 @@
             </form>
             <div class="modal-footer">
                 <div class="form-row row clearfix">
-                <a href="#" class="btn btn-primary ml-3" type="button" onclick="">Inserir</a>
+                <a href="#" class="btn btn-primary ml-3" type="button" onclick="adiciona_item_cash()">Inserir</a>
                 </div>
             </div>
         </div>
