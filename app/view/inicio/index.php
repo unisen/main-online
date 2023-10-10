@@ -96,7 +96,7 @@ include_once($path);
     <div id="app">
 
         <script>
-            /*
+        /*
                          *  Add sidebar classes (sidebar-mini sidebar-collapse sidebar-expanded-on-hover) in body tag
                          *  you can remove this script tag and add classes directly to body
                          *  this is only for demo
@@ -109,7 +109,7 @@ include_once($path);
                                 z-index: 1;
                             }
                          */
-            //document.body.className += ' sidebar-mini' + ' sidebar-collapse' + ' sidebar-expanded-on-hover' + ' sidebar-top-offset';
+        //document.body.className += ' sidebar-mini' + ' sidebar-collapse' + ' sidebar-expanded-on-hover' + ' sidebar-top-offset';
         </script>
         <?php
         $path =  $_SERVER['DOCUMENT_ROOT'];
@@ -121,9 +121,12 @@ include_once($path);
                 <div class="collapse" id="navbarToggleExternalContent">
                     <div class="bg-dark pt-2 pb-2 pl-4 pr-2">
                         <div class="search-bar">
-                            <input class="transparent s-24 text-white b-0 font-weight-lighter w-128 height-50" type="text" placeholder="start typing..." name="dash_text_search" id="dash_text_search">
+                            <input class="transparent s-24 text-white b-0 font-weight-lighter w-128 height-50"
+                                type="text" placeholder="start typing..." name="dash_text_search" id="dash_text_search">
                         </div>
-                        <a href="#" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" class="paper-nav-toggle paper-nav-white active "><i></i></a>
+                        <a href="#" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                            aria-expanded="false" aria-label="Toggle navigation"
+                            class="paper-nav-toggle paper-nav-white active "><i></i></a>
                     </div>
                 </div>
             </div>
@@ -152,10 +155,12 @@ include_once($path);
                                         <i class="icon icon-home2"></i>Atual</a>
                                 </li>
                                 <li>
-                                    <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2"><i class="icon icon-plus-circle mb-3"></i>Cadastros</a>
+                                    <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2"><i
+                                            class="icon icon-plus-circle mb-3"></i>Cadastros</a>
                                 </li>
                                 <li>
-                                    <a class="nav-link" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3"><i class="icon icon-calendar"></i>Pesquisar</a>
+                                    <a class="nav-link" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3"><i
+                                            class="icon icon-calendar"></i>Pesquisar</a>
                                 </li>
                             </ul>
                             <a class="btn-fab absolute fab-right-bottom btn-primary" data-toggle="control-sidebar">
@@ -174,13 +179,15 @@ include_once($path);
                                         <div class="p-4">
                                             <div class="float-right">
                                                 <a href="../associados/">
-                                                <span class="icon icon-user-md text-green s-48"></span></a>
+                                                    <span class="icon icon-user-md text-green s-48"></span></a>
                                             </div>
                                             <div class="counter-title">Sócios Cadastrados</div>
-                                            <h5 class="sc-counter mt-3"><?php echo $_SESSION['socios_cadastrados']; ?></h5>
+                                            <h5 class="sc-counter mt-3"><?php echo $_SESSION['socios_cadastrados']; ?>
+                                            </h5>
                                         </div>
                                         <div class="progress progress-xs r-0">
-                                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="128"></div>
+                                            <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="128"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -188,14 +195,16 @@ include_once($path);
                                     <div class="counter-box white r-5 p-3">
                                         <div class="p-4">
                                             <div class="float-right">
-                                            <a href="../cadastrantes/">
-                                                <span class="icon icon-group_add text-light-blue s-48"></span></a>
+                                                <a href="../cadastrantes/">
+                                                    <span class="icon icon-group_add text-light-blue s-48"></span></a>
                                             </div>
                                             <div class="counter-title ">Cadastrantes</div>
-                                            <h5 class="sc-counter mt-3"><?php echo $_SESSION['verif_cadastrantes']; ?></h5>
+                                            <h5 class="sc-counter mt-3"><?php echo $_SESSION['verif_cadastrantes']; ?>
+                                            </h5>
                                         </div>
                                         <div class="progress progress-xs r-0">
-                                            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="128"></div>
+                                            <div class="progress-bar" role="progressbar" style="width: 50%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="128"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -203,14 +212,15 @@ include_once($path);
                                     <div class="counter-box white r-5 p-3">
                                         <div class="p-4">
                                             <div class="float-right">
-                                            <a href="../tomador_servico/">
-                                                <span class="icon icon-local_hospital text-red s-48"></span></a>
+                                                <a href="../tomador_servico/">
+                                                    <span class="icon icon-local_hospital text-red s-48"></span></a>
                                             </div>
                                             <div class="counter-title">Tomador de Serviço</div>
                                             <h5 class="sc-counter mt-3"><?php echo '88'; ?></h5>
                                         </div>
                                         <div class="progress progress-xs r-0">
-                                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="128"></div>
+                                            <div class="progress-bar" role="progressbar" style="width: 75%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="128"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -218,32 +228,34 @@ include_once($path);
                                     <div class="counter-box white r-5 p-3">
                                         <div class="p-4">
                                             <div class="float-right">
-                                            <a href="../painel_usuarios/">
-                                                <span class="icon icon-user-circle-o text-yellow s-48"></span></a>
+                                                <a href="../painel_usuarios/">
+                                                    <span class="icon icon-user-circle-o text-yellow s-48"></span></a>
                                             </div>
                                             <div class="counter-title">Usuários Admin</div>
                                             <h5 class="sc-counter mt-3"><?php echo $_SESSION['total_usuarios']; ?></h5>
                                         </div>
                                         <div class="progress progress-xs r-0">
-                                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="128"></div>
+                                            <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="128"></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="white p-5 r-5">
                                         <div class="card-title"><a href="../fluxo-de-caixa/">
-                                            <h5> Fluxo de Caixa</h5>
-                        </a>
+                                                <h5> Fluxo de Caixa</h5>
+                                            </a>
                                         </div>
                                         <div class="row my-3">
                                             <div class="col-md-3">
                                                 <div class="my-3 mt-4">
                                                     <h5>Sales <span class="red-text">+203.48</span></h5>
                                                     <span class="s-24">$2652.07</span>
-                                                    <p>A short summary of sales report if you want to add here. This could be useful for quick view.</p>
+                                                    <p>A short summary of sales report if you want to add here. This
+                                                        could be useful for quick view.</p>
                                                 </div>
                                                 <div class="row no-gutters bg-light r-3 p-2 mt-5">
                                                     <div class="col-md-6 b-r p-3">
@@ -258,8 +270,9 @@ include_once($path);
                                                     </div>
                                                 </div>
                                             </div>
+
                                             <div class="col-md-9" style="height: 350px">
-                                                <canvas data-chart="line" data-dataset="[
+                                                <!-- <canvas data-chart="line" data-dataset="[
                                                             [0, 15, 4, 30, 8, 5, 18],
                                                             [1, 7, 21, 4, 12, 5, 10],
                                                 
@@ -337,7 +350,15 @@ include_once($path);
                                                                         }
                                                                     }
                                                                 }">
-                                                </canvas>
+                                                </canvas> -->
+                                                <div style="height: 450px">
+                                                    <canvas data-chart="line"
+                                                        data-dataset="[[0,528,228,728,528,1628,0]]"
+                                                        data-labels="['Blue','Yellow','Green','Purple','Orange','Red','Indigo']"
+                                                        data-dataset-options="[{ label:'Sales', borderColor:  'rgba(255,99,132,1)', backgroundColor: 'rgba(255, 99, 132, 0.2)'}]">
+                                                    </canvas>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
@@ -357,7 +378,8 @@ include_once($path);
                                                             <div><span class="text-success">40+35</span></div>
                                                         </div>
                                                         <div class="text-center">
-                                                            <div class="s-48 my-3 font-weight-lighter"><i class="icon-chrome"></i></div>
+                                                            <div class="s-48 my-3 font-weight-lighter"><i
+                                                                    class="icon-chrome"></i></div>
                                                             Configs
                                                         </div>
 
@@ -369,10 +391,13 @@ include_once($path);
                                                     <div class="card-body">
                                                         <div class="d-flex justify-content-between align-items-center">
                                                             <div><i class="icon-timer s-18"></i></div>
-                                                            <div><span class="badge badge-pill badge-primary">4:30</span></div>
+                                                            <div><span
+                                                                    class="badge badge-pill badge-primary">4:30</span>
+                                                            </div>
                                                         </div>
                                                         <div class="text-center">
-                                                            <div class="s-48 my-3 font-weight-lighter"><?php echo $_SESSION['show_user']; ?></div>
+                                                            <div class="s-48 my-3 font-weight-lighter">
+                                                                <?php echo $_SESSION['show_user']; ?></div>
                                                             Usuários Online
                                                         </div>
 
@@ -387,11 +412,12 @@ include_once($path);
                                                     <div class="card-body">
                                                         <div class="d-flex justify-content-between align-items-center">
                                                             <div><i class="icon-user-circle-o s-18"></i></div>
-                                                            <div><span class="badge badge-pill badge-danger">4:30</span></div>
+                                                            <div><span class="badge badge-pill badge-danger">4:30</span>
+                                                            </div>
                                                         </div>
                                                         <div class="text-center">
                                                             <div class="s-48 my-3 font-weight-lighter">170</div>
-                                                             Novos Contratos
+                                                            Novos Contratos
                                                         </div>
 
                                                     </div>
@@ -420,7 +446,8 @@ include_once($path);
                                 <div class="col-md-3">
                                     <div class="card no-b r-5 my-3">
                                         <div class="card-body">
-                                            <h5 class="card-title">Novos Associados <span class="badge badge-success r-3">30+</span>
+                                            <h5 class="card-title">Novos Associados <span
+                                                    class="badge badge-success r-3">30+</span>
                                             </h5>
                                             <p>Recentemente foram adicionados 30 novos sócios</p>
                                             <div class="avatar-group">
@@ -451,24 +478,34 @@ include_once($path);
                                     <div class="card no-b r-5 my-3">
                                         <div class="bg-primary text-white lighten-2 r-5">
                                             <div class="pt-5 pb-0 pl-4 pr-4">
-                                                <div class="lightSlider masonry-container" data-item="1" data-item-md="1" data-item-sm="1" data-auto="true" data-pause="6000" data-pager="false" data-controls="false" data-loop="true">
+                                                <div class="lightSlider masonry-container" data-item="1"
+                                                    data-item-md="1" data-item-sm="1" data-auto="true" data-pause="6000"
+                                                    data-pager="false" data-controls="false" data-loop="true">
                                                     <div>
                                                         <h5 class="font-weight-normal s-14">Escalas Trocadas</h5>
                                                         <div class="my-5">
                                                             <span>
                                                                 Essa Semana 30%</span>
                                                             <div class="progress" style="height: 3px;">
-                                                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                <div class="progress-bar bg-success" role="progressbar"
+                                                                    style="width: 25%;" aria-valuenow="25"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
                                                             </div>
                                                         </div>
                                                         <div class="my-5">
                                                             <span>
                                                                 Semana Passada 10%</span>
                                                             <div class="progress" style="height: 3px;">
-                                                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                <div class="progress-bar bg-success" role="progressbar"
+                                                                    style="width: 25%;" aria-valuenow="25"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
                                                             </div>
                                                         </div>
-                                                        <canvas width="378" height="140" data-chart="spark" data-chart-type="bar" data-dataset="[[28,530,200,430,28,530,200,430,28,530,200,430,28,530,200,430,28,530,200,430]]" data-labels="['a','b','c','d','a','b','c','d','a','b','c','d','a','b','c','d','a','b','c','d']" data-dataset-options="[
+                                                        <canvas width="378" height="140" data-chart="spark"
+                                                            data-chart-type="bar"
+                                                            data-dataset="[[28,530,200,430,28,530,200,430,28,530,200,430,28,530,200,430,28,530,200,430]]"
+                                                            data-labels="['a','b','c','d','a','b','c','d','a','b','c','d','a','b','c','d','a','b','c','d']"
+                                                            data-dataset-options="[
                                                         { borderColor:  'rgba(54, 162, 235, 1)', backgroundColor: 'rgba(54, 162, 235,1)'},
                                                         ]">
                                                         </canvas>
@@ -479,17 +516,25 @@ include_once($path);
                                                             <span>
                                                                 Hoje 70% (atualmente)</span>
                                                             <div class="progress" style="height: 3px;">
-                                                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                <div class="progress-bar bg-success" role="progressbar"
+                                                                    style="width: 25%;" aria-valuenow="25"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
                                                             </div>
                                                         </div>
                                                         <div class="my-5">
                                                             <span>
                                                                 Ontem 90%</span>
                                                             <div class="progress" style="height: 3px;">
-                                                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                <div class="progress-bar bg-success" role="progressbar"
+                                                                    style="width: 25%;" aria-valuenow="25"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
                                                             </div>
                                                         </div>
-                                                        <canvas width="378" height="140" data-chart="spark" data-chart-type="line" data-dataset="[[28,530,200,430,28,530,200,430,28,530,200,430,28,530,200,430,28,530,200,430]]" data-labels="['a','b','c','d','a','b','c','d','a','b','c','d','a','b','c','d','a','b','c','d']" data-dataset-options="[
+                                                        <canvas width="378" height="140" data-chart="spark"
+                                                            data-chart-type="line"
+                                                            data-dataset="[[28,530,200,430,28,530,200,430,28,530,200,430,28,530,200,430,28,530,200,430]]"
+                                                            data-labels="['a','b','c','d','a','b','c','d','a','b','c','d','a','b','c','d','a','b','c','d']"
+                                                            data-dataset-options="[
                                                         { borderColor:  'rgba(54, 162, 235, 1)', backgroundColor: 'rgba(54, 162, 235,1)'},
                                                         ]">
                                                         </canvas>
@@ -505,12 +550,14 @@ include_once($path);
                                     <div class="card my-3 no-b ">
                                         <div class="card-header white b-0 p-3">
                                             <div class="card-handle">
-                                                <a data-toggle="collapse" href="#salesCard" aria-expanded="false" aria-controls="salesCard">
+                                                <a data-toggle="collapse" href="#salesCard" aria-expanded="false"
+                                                    aria-controls="salesCard">
                                                     <i class="icon-menu"></i>
                                                 </a>
                                             </div>
                                             <h4 class="card-title">Pagamentos de Associado</h4>
-                                            <small class="card-subtitle mb-2 text-muted">Pagamentos requeridos por sócios.</small>
+                                            <small class="card-subtitle mb-2 text-muted">Pagamentos requeridos por
+                                                sócios.</small>
                                         </div>
                                         <div class="collapse show" id="salesCard">
                                             <div class="card-body p-0">
@@ -526,8 +573,10 @@ include_once($path);
                                                         <tbody>
                                                             <tr>
                                                                 <td class="w-10">
-                                                                    <a href="panel-page-profile.html" class="avatar avatar-lg">
-                                                                        <img src="../../includes/template/assets/img/dummy/u6.png" alt="">
+                                                                    <a href="panel-page-profile.html"
+                                                                        class="avatar avatar-lg">
+                                                                        <img src="../../includes/template/assets/img/dummy/u6.png"
+                                                                            alt="">
                                                                     </a>
                                                                 </td>
                                                                 <td>
@@ -539,8 +588,10 @@ include_once($path);
                                                             </tr>
                                                             <tr>
                                                                 <td class="w-10">
-                                                                    <a href="panel-page-profile.html" class="avatar avatar-lg">
-                                                                        <img src="../../includes/template/assets/img/dummy/u7.png" alt="">
+                                                                    <a href="panel-page-profile.html"
+                                                                        class="avatar avatar-lg">
+                                                                        <img src="../../includes/template/assets/img/dummy/u7.png"
+                                                                            alt="">
                                                                     </a>
                                                                 </td>
                                                                 <td>
@@ -552,8 +603,10 @@ include_once($path);
                                                             </tr>
                                                             <tr>
                                                                 <td class="w-10">
-                                                                    <a href="panel-page-profile.html" class="avatar avatar-lg">
-                                                                        <img src="../../includes/template/assets/img/dummy/u9.png" alt="">
+                                                                    <a href="panel-page-profile.html"
+                                                                        class="avatar avatar-lg">
+                                                                        <img src="../../includes/template/assets/img/dummy/u9.png"
+                                                                            alt="">
                                                                     </a>
                                                                 </td>
                                                                 <td>
@@ -565,8 +618,10 @@ include_once($path);
                                                             </tr>
                                                             <tr>
                                                                 <td class="w-10">
-                                                                    <a href="panel-page-profile.html" class="avatar avatar-lg">
-                                                                        <img src="../../includes/template/assets/img/dummy/u11.png" alt="">
+                                                                    <a href="panel-page-profile.html"
+                                                                        class="avatar avatar-lg">
+                                                                        <img src="../../includes/template/assets/img/dummy/u11.png"
+                                                                            alt="">
                                                                     </a>
                                                                 </td>
                                                                 <td>
@@ -578,8 +633,10 @@ include_once($path);
                                                             </tr>
                                                             <tr>
                                                                 <td class="w-10">
-                                                                    <a href="panel-page-profile.html" class="avatar avatar-lg">
-                                                                        <img src="../../includes/template/assets/img/dummy/u12.png" alt="">
+                                                                    <a href="panel-page-profile.html"
+                                                                        class="avatar avatar-lg">
+                                                                        <img src="../../includes/template/assets/img/dummy/u12.png"
+                                                                            alt="">
                                                                     </a>
                                                                 </td>
                                                                 <td>
@@ -606,15 +663,16 @@ include_once($path);
                                     <div class="counter-box white r-5 p-3">
                                         <div class="p-4">
                                             <div class="float-right">
-                                            <a href="../painel_usuarios/">
-                                                <span class="icon icon-user-circle-o text-yellow s-48"></span>
-                                            </a>
+                                                <a href="../painel_usuarios/">
+                                                    <span class="icon icon-user-circle-o text-yellow s-48"></span>
+                                                </a>
                                             </div>
                                             <div class="counter-title">Usuários Admin</div>
                                             <h5 class="sc-counter mt-3"><?php echo $_SESSION['total_usuarios']; ?></h5>
                                         </div>
                                         <div class="progress progress-xs r-0">
-                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="128"></div>
+                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 25%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="128"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -622,15 +680,16 @@ include_once($path);
                                     <div class="counter-box white r-5 p-3">
                                         <div class="p-4">
                                             <div class="float-right">
-                                            <a href="../tomador_servico/">
-                                                <span class="icon icon-local_hospital text-red s-48"></span>
-                                            </a>
+                                                <a href="../tomador_servico/">
+                                                    <span class="icon icon-local_hospital text-red s-48"></span>
+                                                </a>
                                             </div>
                                             <div class="counter-title ">Tomador de Serviço</div>
                                             <h5 class="sc-counter mt-3"><?php echo $_SESSION['total_tomadores']; ?></h5>
                                         </div>
                                         <div class="progress progress-xs r-0">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="128"></div>
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 50%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="128"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -638,15 +697,17 @@ include_once($path);
                                     <div class="counter-box white r-5 p-3">
                                         <div class="p-4">
                                             <div class="float-right">
-                                            <a href="../verificacao_cadastro/">
-                                                <span class="icon icon-group_add text-light-blue s-48"></span>
-                                            </a>
+                                                <a href="../verificacao_cadastro/">
+                                                    <span class="icon icon-group_add text-light-blue s-48"></span>
+                                                </a>
                                             </div>
                                             <div class="counter-title">Cadastrantes</div>
-                                            <h5 class="sc-counter mt-3"><?php echo $_SESSION['verif_cadastrantes']; ?></h5>
+                                            <h5 class="sc-counter mt-3"><?php echo $_SESSION['verif_cadastrantes']; ?>
+                                            </h5>
                                         </div>
                                         <div class="progress progress-xs r-0">
-                                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="128"></div>
+                                            <div class="progress-bar" role="progressbar" style="width: 75%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="128"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -654,15 +715,16 @@ include_once($path);
                                     <div class="counter-box white r-5 p-3">
                                         <div class="p-4">
                                             <div class="float-right">
-                                            <a href="../socios_unisen/">
-                                                <span class="icon icon-user-md text-green s-48"></span>
-                                            </a>
+                                                <a href="../socios_unisen/">
+                                                    <span class="icon icon-user-md text-green s-48"></span>
+                                                </a>
                                             </div>
                                             <div class="counter-title">Sócios</div>
                                             <h5 class="sc-counter mt-3"><?php echo $socios_cadastrados; ?></h5>
                                         </div>
                                         <div class="progress progress-xs r-0">
-                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="128"></div>
+                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 25%;"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="128"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -674,9 +736,12 @@ include_once($path);
                                             <canvas data-chart="line" data-dataset="[
                                                 [0,528,228,728,528,1628,0],
                                                 [0,628,228,1228,428,1828,0],
-                                                ]" data-labels="['Blue','Yellow','Green','Purple','Orange','Red','Indigo']" data-dataset-options="[
+                                                ]"
+                                                data-labels="['Blue','Yellow','Green','Purple','Orange','Red','Indigo']"
+                                                data-dataset-options="[
                                             { label:'Sales', borderColor:  'rgba(54, 162, 235, 1)', backgroundColor: 'rgba(54, 162, 235,1)'},
-                                            { label:'Orders', borderColor:  'rgba(255,99,132,1)', backgroundColor: 'rgba(255, 99, 132, 1)' }]" data-options="{
+                                            { label:'Orders', borderColor:  'rgba(255,99,132,1)', backgroundColor: 'rgba(255, 99, 132, 1)' }]"
+                                                data-options="{
                                                 maintainAspectRatio: false,
                                                 legend: {
                                                     display: true
@@ -731,16 +796,22 @@ include_once($path);
                                         <div class="card-body p-4">
                                             <div>
                                                 <i class="icon-calendar-check-o s-48 text-primary"></i>
-                                                <p class="p-t-b-20">Hey Soldier welcome back signin now there is lot of new stuff waiting for you</p>
+                                                <p class="p-t-b-20">Hey Soldier welcome back signin now there is lot of
+                                                    new stuff waiting for you</p>
                                             </div>
                                             <form action="dashboard2.html">
                                                 <div class="form-group has-icon"><i class="icon-calendar"></i>
-                                                    <input class="form-control form-control-lg datePicker" placeholder="Date From" type="text" name="dash_date_from" id="dash_date_from">
+                                                    <input class="form-control form-control-lg datePicker"
+                                                        placeholder="Date From" type="text" name="dash_date_from"
+                                                        id="dash_date_from">
                                                 </div>
                                                 <div class="form-group has-icon"><i class="icon-calendar"></i>
-                                                    <input class="form-control form-control-lg datePicker" placeholder="Date TO" type="text" name="dash_date_to" id="dash_date_to">
+                                                    <input class="form-control form-control-lg datePicker"
+                                                        placeholder="Date TO" type="text" name="dash_date_to"
+                                                        id="dash_date_to">
                                                 </div>
-                                                <input class="btn btn-success btn-lg btn-block" value="Get Data" type="submit">
+                                                <input class="btn btn-success btn-lg btn-block" value="Get Data"
+                                                    type="submit">
                                             </form>
                                         </div>
                                     </div>
@@ -773,14 +844,14 @@ include_once($path);
 --- http://writing.colin-gourlay.com/safely-using-ready-before-including-jquery/
 -->
         <script>
-            (function($, d) {
-                $.each(readyQ, function(i, f) {
-                    $(f)
-                });
-                $.each(bindReadyQ, function(i, f) {
-                    $(d).bind("ready", f)
-                })
-            })(jQuery, document)
+        (function($, d) {
+            $.each(readyQ, function(i, f) {
+                $(f)
+            });
+            $.each(bindReadyQ, function(i, f) {
+                $(d).bind("ready", f)
+            })
+        })(jQuery, document)
         </script>
 </body>
 
