@@ -1,0 +1,66 @@
+/* (A) AUTOCOMPLETE WRAPPER */
+
+.acWrap {
+    display: inline-block;
+    /* Or block if you like */
+    position: relative;
+}
+
+
+/* (B) SUGGESTIONS */
+
+.acWrap .acSuggest {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    background: #fff;
+    border: 1px solid rgb(148, 148, 148);
+    display: none;
+}
+
+.acWrap .acSuggest ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.acWrap .acSuggest ul li {
+    padding: 3px;
+}
+
+.acWrap .acSuggest ul li:hover {
+    background: #d9e7ff;
+    cursor: pointer;
+}
+
+
+/* #id_cliente {
+    width: 550px;
+}
+*/
+
+@media only screen and (min-width: 1200px) {
+    .acWrap {
+        width: 92%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    /*    #id_cliente {
+        width: 573px;
+    } */
+    .acWrap {
+        width: 82%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    /*    #id_cliente {
+           width: 573px;
+       } */
+    .acWrap {
+        width: 76%;
+    }
+}

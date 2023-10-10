@@ -1,0 +1,141 @@
+.loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F5F8FA;
+    z-index: 9998;
+    text-align: center;
+}
+
+.plane-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.nome-empresa-sidebar {
+    position: relative;
+    top: -26px;
+    left: 40px;
+    font-weight: 500;
+    color: #6B7459;
+}
+
+.logo-sidebar {
+    border-radius: 50px;
+}
+
+.logo-sidebar-div {
+    margin-left: 13%;
+}
+
+.sidebar-user-online {
+    color: #81c784;
+}
+
+
+/* .navbar-sistema {
+    background-color: #d1d1d1 !important;
+} */
+
+
+/* .navbarleft-toogle {
+    color: #ffffff !important;
+    background-color: #6B7459 !important;
+} */
+
+
+/* .cores-teste {
+    color: #E5F1CE;
+    color: #F7FBF1;
+    color: #3C4434;
+    color: #ABBA90;
+    color: #848D72;
+    color: #9AA586;
+    color: #646A55;
+    color: #6B7459;
+    color: #6C7464;
+    color: #A4A49C;
+    color: #535C46;
+    color: #D1E7A7;
+    color: #3E4532;
+    color: #181A13;
+} */
+
+
+/* .sidebar-user-online {
+    color: #03f418;
+} */
+
+.verif_cadastrantes {
+    margin-right: 12px;
+    color: #ffcc80;
+    font-weight: 400;
+}
+
+.socios_cadastrados {
+    margin-right: 12px;
+    color: #b3e5fc;
+    font-weight: 400;
+}
+
+.total_usuarios {
+    margin-right: 12px;
+    color: #2ea467;
+    font-weight: 400;
+}
+
+.badge-cadastrantes {
+    background-color: #a5d6a7 !important;
+}
+
+.blue.accent-3 {
+    background-color: #54613d!important;
+}
+.blue {
+    background-color: #79a45e!important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #869e77 !important;
+    border-color: #9bb58b !important;
+}
+
+.modal-header.r-0.bg-primary {
+    background-color: #3e4532!important;
+}
+
+.paper-nav-toggle i {   
+    color: #9bb58b !important;  
+    background: #9bb58b !important;
+}
+.paper-nav-toggle i::after, 
+.paper-nav-toggle i::before {
+    background: #9bb58b !important;
+}
+
+.nav-material>li>.nav-link.active {
+    color: #9bb58b !important;
+}
+.nav-material>li .nav-link.active {
+    border-bottom: 3px solid #9bb58b !important;
+}
+
+.nav-material>li>a::after {
+    background: #9bb58b !important;
+}
+
+#reenviar_confirmacao > i {
+    color:#6a9454 !important;
+}
+
+.btn .icon {
+    padding-right: 10px !important;
+}
+
+#app > div.page.has-sidebar-left.height-full {
+    background-color: #eff5e5 !important;
+}

@@ -1,0 +1,12 @@
+{
+    "SMTPDebug": 0,
+    "CharSet": "UTF-8",
+    "Username": "escalamedica@unisen.com.br",
+    "Password": "28071064RpC",
+    "Host": "smtp.titan.email",
+    "Port": 465,
+    "Email_from": "escalamedica@unisen.com.br",
+    "Email_name_from": "Mensagem de UNISEN Sistema",
+    "Subject": "ESCALA MÉDICA - GRUPO UNISEN",
+    "Body": "body_email.php"
+}

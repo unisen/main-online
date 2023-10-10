@@ -1,0 +1,7 @@
+.badge-cadastrantes {
+    top: 41% !important;
+}
+
+#app > div.page.has-sidebar-left.height-full > div > div > div {
+    padding: 20px;
+}

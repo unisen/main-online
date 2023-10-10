@@ -1,0 +1,128 @@
+#pdf_files {
+    padding: 0 2%;
+}
+
+.doc-cad-float {
+    position: relative;
+    display: none;
+}
+
+.doc-cad-float button {
+    margin-bottom: 2px;
+}
+
+#tbl_cadastrantes > tbody > tr {
+    cursor: pointer;
+}
+
+.btn-display-dados {
+    background: #99ccaa;
+    color: #ffffff;
+    padding: 10px 15px;    
+    border-radius: 90px;
+    position: fixed;
+    top: 20%;
+    right: 5%;
+}
+
+.btn-display-dados:link {
+    color: #ffffff;
+}
+.btn-display-dados:visited {
+    color: #ffffff;
+}
+
+.btn-close-display-dados {
+    display: none;
+    background: #be190d;
+    color: #000000;
+    padding: 10px 15px;  
+    border-radius: 90px;
+    position: fixed;
+    top: 30%;
+    right: 5%;
+}
+.btn-close-display-dados:hover {
+    color: #ffffff;
+}
+.btn-close-display-dados:active {
+    color: #ffffff;
+}
+.btn-close-display-dados:link {
+    color: #ffffff;
+}
+#tela_dados_cadastro {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    background: azure;
+    padding: 12px 8px;
+    z-index: 10000;
+}
+
+.change-campo {
+    width: 100%;
+    background-color: azure;
+}
+#display_campo_verificando {
+   text-align: center; 
+}
+
+#ver_documentos_cadastrante {
+    background-color: #96b983 !important;
+    border-color: #96b983 !important;
+}
+
+#reenviar_confirmacao {
+    background-color: #b6d2a6 !important;
+    border-color: #b6d2a6 !important;
+    color:#7c7734 !important;
+}
+
+/* #submitChangeField {
+    background-color:#181A13;
+    color: white;
+}
+
+#submitChangeField:hover {
+    background-color: #6c8158;
+} */
+
+
+@media only screen and (max-width: 600px) {
+    #abre-tela-dados {
+        margin-top: 25px;
+    }
+    .item-telefone, .item-acoes {
+      display: none !important;
+    }
+
+    .item-acoes-arquivados {
+        display: inline-flex;
+
+    }
+    #tbl_cadastrantes_arquivados > thead > tr > th:nth-child(2),
+    #tbl_cadastrantes > thead > tr > th:nth-child(2) {
+        padding-right: 150px;
+    }
+
+    td.item-acoes-arquivados {
+        padding-top: 20px;
+    }
+
+    #tela_dados_cadastro {
+        width: 100%;
+        display: none;
+        position: absolute;
+        top: 10px;
+        right: 0px;
+        background: rgb(35, 219, 219);
+        padding: 12px 8px;
+        z-index: 10000;
+    }
+
+  }
+
+  

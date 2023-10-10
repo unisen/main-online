@@ -1,0 +1,178 @@
+<form id="formulario" method="post" style="display: flex;">
+        <fieldset>
+            <legend>FORMULÁRIO DE CADASTRO</legend>
+                                <div class="no-error" id="no-error">
+                </div>
+                                
+                <label for="nome">NOME COMPLETO<span> *</span></label>
+                <input type="text" name="nome" id="nome" placeholder="Nome Completo (igual identidade médica)" onblur="optChangeIdEscala()" oninput="optChangeIdEscala(), apagaErro(this)">
+                                <label for="id-estadocivil">ESTADO CIVIL<span> *</span></label>
+                <select type="text" name="estadocivil" onchange="apagaErro(this)" id="id-estadocivil">
+                    <option value="" selected="">Selecione</option>
+                    <option value="solteiro">Solteiro(a)</option><option value="casado">Casado(a)</option><option value="divorciado">Divorciado(a)</option><option value="viuvo">Viuvo(a)</option>                </select>
+                <label for="sexo">SEXO<span> *</span></label>
+                <select type="text" name="sexo" onchange="apagaErro(this)" id="sexo">
+                    <option value="" selected="">Selecione</option>
+                    <option value="masculino">Masculino</option><option value="feminino">Feminino</option>                </select>
+                <label for="data_nascimento">DATA DE NASCIMENTO<span> *</span></label>
+                <input type="date" name="dn" id="data_nascimento" onchange="apagaErro(this)" class="colordate">
+                <label for="cpf">CPF<span> *</span></label> 
+                <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" maxlength="14" oninput="cpfRegEx(this) , apagaErro(this)" onfocus="apagaErro()" class="cpf ">
+                                <hr>
+                <label for="rg">RG<span> *</span></label>
+                <input type="text" name="rg" id="rg" placeholder="Digite seu RG" maxlength="20" oninput="ChangeRg(this), apagaErro(this)" onfocus="apagaErro()">
+                <div class="rg-container">
+                    <div class="crm">
+                        <label for="oepx">ÓRGÃO EXPEDIDOR<span> *</span></label>
+                        <input type="text" name="oexp" id="oexp" placeholder="Digite o nome do órgão" oninput="apagaErro(this)">
+                    </div>
+                    <div class="uf">
+                        <label for="rg_uf">UF<span> *</span></label>
+                        <select type="text" name="rg_uf" id="rg_uf" placeholder="UF do RG" onchange="apagaErro(this)" onfocus="apagaErro()">
+                            <option value="" disabled="" selected="">Selecione</option>
+                            <option value="AC">AC</option>
+                            <option value="AL">AL</option>
+                            <option value="AP">AP</option>
+                            <option value="AM">AN</option>
+                            <option value="BA">BA</option>
+                            <option value="CE">CE</option>
+                            <option value="DF">DF</option>
+                            <option value="ES">ES</option>
+                            <option value="GO">GO</option>
+                            <option value="MA">MA</option>
+                            <option value="MT">MT</option>
+                            <option value="MS">MS</option>
+                            <option value="MG">MG</option>
+                            <option value="PR">PR</option>
+                            <option value="PB">PB</option>
+                            <option value="PA">PA</option>
+                            <option value="PE">PE</option>
+                            <option value="PI">PI</option>
+                            <option value="RJ">RJ</option>
+                            <option value="RN">RN</option>
+                            <option value="RS">RS</option>
+                            <option value="RO">RO</option>
+                            <option value="RR">RR</option>
+                            <option value="SC">SC</option>
+                            <option value="SE">SE</option>
+                            <option value="SP">SP</option>
+                            <option value="TO">TO</option>
+                        </select>
+                    </div>
+                </div>
+                <label for="dexp">DATA DE EXPEDIÇÃO<span> *</span></label>
+                <input type="date" name="dexp" id="dexp" onchange="apagaErro(this)" class="colordate">
+                <hr>
+                <label for="nome_pai">NOME DO PAI<span> *</span></label>
+                <input type="text" name="nome_pai" id="nome_pai" placeholder="Nome Completo" onblur="optChangeIdEscala()" oninput="optChangeIdEscala(), apagaErro(this)">
+                                <label for="nome_pai">NOME DA MÃE<span> *</span></label>
+                <input type="text" name="nome_mae" id="nome_mae" placeholder="Nome Completo" onblur="optChangeIdEscala()" oninput="optChangeIdEscala(), apagaErro(this)">
+                                <label for="id-sexo">NACIONALIDADE<span> *</span></label>
+                <select type="text" name="nacionalidade" onchange="apagaErro(this)" id="id-sexo">
+                    <option value="" selected="">Selecione</option>
+                    <option value="brasileira">brasileira</option><option value="outra">outra</option>                </select>
+               <div class="rg-container">
+                    <div class="crm">
+                        <label for="naturalidade">NATURALIDADE<span> *</span></label>
+                        <input type="text" name="naturalidade" id="naturalidade" placeholder="Cidade em que nasceu" oninput="apagaErro(this)">
+                    </div>
+                    <div class="uf">
+                        <label for="nat_uf">UF<span> *</span></label>
+                        <select type="text" name="nat_uf" id="nat_uf" onchange="apagaErro(this)" onfocus="apagaErro()">
+                                  <option value="" disabled="" selected="">Selecione</option>
+                            <option value="AC">AC</option>
+                            <option value="AL">AL</option>
+                            <option value="AP">AP</option>
+                            <option value="AM">AN</option>
+                            <option value="BA">BA</option>
+                            <option value="CE">CE</option>
+                            <option value="DF">DF</option>
+                            <option value="ES">ES</option>
+                            <option value="GO">GO</option>
+                            <option value="MA">MA</option>
+                            <option value="MT">MT</option>
+                            <option value="MS">MS</option>
+                            <option value="MG">MG</option>
+                            <option value="PR">PR</option>
+                            <option value="PB">PB</option>
+                            <option value="PA">PA</option>
+                            <option value="PE">PE</option>
+                            <option value="PI">PI</option>
+                            <option value="RJ">RJ</option>
+                            <option value="RN">RN</option>
+                            <option value="RS">RS</option>
+                            <option value="RO">RO</option>
+                            <option value="RR">RR</option>
+                            <option value="SC">SC</option>
+                            <option value="SE">SE</option>
+                            <option value="SP">SP</option>
+                            <option value="TO">TO</option>
+                        </select>
+                    </div>
+                </div>
+                <label for="titulo">TITULO DE ELEITOR<span> *</span></label>
+                <input type="text" name="titulo" id="titulo" onblur="optChangeIdEscala()" oninput="optChangeIdEscala(), apagaErro(this)">
+                <label for="pis">PIS / PASEP<span> *</span></label>
+                <input type="text" name="pis" id="pis" onblur="optChangeIdEscala()" oninput="optChangeIdEscala(), apagaErro(this)">
+                <label for="telefone">CELULAR<span> *</span></label>
+                <input type="text" name="telefone" id="telefone" onblur="optChangeIdEscala()" maxlength="15" oninput="optChangeIdEscala(), apagaErro(this), celRegEx(this)">
+                <label for="endereco">ENDEREÇO<span> *</span></label>
+                <input type="text" name="endereco" id="endereco" onblur="optChangeIdEscala()" oninput="optChangeIdEscala(), apagaErro(this)">
+                <label for="endereco_nome">ENDEREÇO NO NOME<span> *</span></label>
+                <select type="text" name="endereco_nome" onchange="apagaErro(this)" id="endereco_nome">
+                    <option value="" selected="">Selecione</option>
+                    <option value="SIM">SIM</option><option value="NÃO">NÃO</option>                </select>
+                <label for="login">E-MAIL<span> *</span></label>
+                <input type="text" name="email" id="email" placeholder="E-mail" oninput="apagaErro(this)" onfocus="apagaErro()">
+                <div class="crm-container">
+                    <div class="crm">
+                        <label for="crm">CRM<span> *</span></label>
+                        <input type="text" name="crm" id="crm" placeholder="CRM" oninput="optChangeIdEscala(this) , apagaErro(this)" onfocus="apagaErro()">
+                    </div>
+                    <div class="uf">
+                        <label for="crm_uf">UF<span> *</span></label>
+                        <select type="text" name="crm_uf" id="crm_uf" placeholder="UF do CRM" onchange="optChangeIdEscala() , apagaErro(this)" onfocus="apagaErro()">
+                            <option value="" disabled="" selected="">Selecione</option>
+                            <option value="AC">AC</option>
+                            <option value="AL">AL</option>
+                            <option value="AP">AP</option>
+                            <option value="AM">AN</option>
+                            <option value="BA">BA</option>
+                            <option value="CE">CE</option>
+                            <option value="DF">DF</option>
+                            <option value="ES">ES</option>
+                            <option value="GO">GO</option>
+                            <option value="MA">MA</option>
+                            <option value="MT">MT</option>
+                            <option value="MS">MS</option>
+                            <option value="MG">MG</option>
+                            <option value="PR">PR</option>
+                            <option value="PB">PB</option>
+                            <option value="PA">PA</option>
+                            <option value="PE">PE</option>
+                            <option value="PI">PI</option>
+                            <option value="RJ">RJ</option>
+                            <option value="RN">RN</option>
+                            <option value="RS">RS</option>
+                            <option value="RO">RO</option>
+                            <option value="RR">RR</option>
+                            <option value="SC">SC</option>
+                            <option value="SE">SE</option>
+                            <option value="SP">SP</option>
+                            <option value="TO">TO</option>
+                        </select>
+                    </div>
+                </div>
+                <label for="id-escala">ID ESCALA<span> *</span></label>
+                <select type="text" name="id-escala" onchange="apagaErro(this)" id="id-escala">
+                    <option value="" disabled="" selected="">Escolha uma opção</option>
+                                    </select>
+                <label for="nome">SENHA<span> *</span></label>
+                <input type="password" name="senha" id="senha" placeholder="Senha de 6 digitos" maxlength="6" onfocus="apagaErro()" oninput="apagaErro(this)">
+                                <label for="login">CONFIRMAR SENHA<span> *</span></label>
+                <input type="password" name="senha-confirma" id="senha-confirma" placeholder="Repita a senha" maxlength="6" oninput="apagaErro(this)" onfocus="apagaErro()">
+                <hr>
+                <a id="forward1" class="forward" onclick="forward('formulario')">VOLTAR</a>
+                <button id="next2" name="submit" class="next">PRÓXIMO
+        </button></fieldset>
+    </form>

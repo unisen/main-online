@@ -1,0 +1,15 @@
+[
+    {
+        "server_mode": "on",
+        "smtpdebug": "0",
+        "charset": "UTF-8",
+        "email_login": "escalamedica@unisen.com.br",
+        "password_login": "28071064RpC",
+        "smtp_host": "smtp.titan.email",
+        "smtp_port": "465",
+        "email_from": "escalamedica@unisen.com.br",
+        "email_name_from": "Mensagem de UNISEN Sistema",
+        "subject": "ESCALA MÉDICA - GRUPO UNISEN",
+        "body_file": "body_email.php"
+    }
+]

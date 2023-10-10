@@ -1,0 +1,24 @@
+.badge-cadastrantes {
+    top: 41% !important;
+}
+
+.salvar-success {
+    color: green;
+}
+
+.salvar-error {
+    color: red;
+}
+
+.campo-empresa {
+    font-weight: bold;
+}
+
+th {
+    background-color: white;
+    color: rgb(26, 136, 61);
+}
+
+tr {
+    background-color: rgb(248, 248, 248);
+}

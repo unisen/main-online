@@ -1,0 +1,40 @@
+Array
+(
+    [nome] =&gt; Diego Fernandes Neves Oliveira
+    [estadocivil] =&gt; solteiro
+    [sexo] =&gt; masculino
+
+    [dn] =&gt; 2023-06-08
+    [cpf] =&gt; 942.495.801-30
+    [file] =&gt; 
+
+    [rg] =&gt; 430.427.4
+    [oexp] =&gt; SSP
+    [rg_uf] =&gt; GO
+
+    [dexp] =&gt; 2023-06-20
+    [nome_pai] =&gt; Dario Fernande
+    [nome_mae] =&gt; Eneusa Maria d
+
+    [nacionalidade] =&gt; brasileira
+    [naturalidade] =&gt; Ipatinga
+    [nat_uf] =&gt; GO
+
+    [titulo] =&gt; 6465456
+    [pis] =&gt; 4535355
+    [telefone] =&gt; (62) 99265-8254
+
+    [endereco] =&gt; Rua 36, 115, Setor Marista
+    [endereco_nome] =&gt; SIM
+    [email] =&gt; dfno82@gmail.com
+
+    [crm] =&gt; 696969
+    [crm_uf] =&gt; GO
+    [id-escala] =&gt; escala1
+    
+    [senha] =&gt; 123456
+    [senha-confirma] =&gt; 123456
+)
+sucesso
+
+ ( [ID] => 1 [REGISTRO] => [CONTRATO] => 01_2018 [INSCRIÇÃO] => 1 [SEXO] => masculino [ESTADO CIVIL] => solteiro [NOME COMPLETO] => DOUGLAS NELSON FELIX DE SOUZA BARBOSA [FILIAÇÃO] => [CRM] => 22672 [TELEFONE] => (62) 99959-1989 [E-MAIL] => douglasnfsb@gmail.com [DATA DE NASCIMENTO] => 18/07/1989 [RG] => 5226175 SSP/GO [NATURALIDADE] => [NACIONALIDADE] => BRASILEIRA [CPF] => 729.452.731-87 [TITULO DE ELEITOR] => [PIS] => [ENDEREÇO] => [ENDEREÇO NO NOME] => [DADOS BANCARIOS] => [FUNÇÃO] => PLANTONISTA [ESPECIALIDADE] => CLÍNICO GERAL / RESIDENTE PSIQUIATRIA [ID PLANILHA] => DOUGLAS BARBOSA (22672) [EMPRESA] => RPC E ASSOCIADOS S/S LTDA [STATUS] => [USER_IMAGE] => ) 

@@ -1,0 +1,322 @@
+.content-item-pedido {
+    padding: 16px;
+}
+
+.btn-sticky {
+    display: block;
+    position: fixed !important;
+    width: 95%;
+    z-index: 10;
+    bottom: 0px;
+    right: 2px;
+}
+
+.btn-sticky+.content-item-pedido {
+    padding-top: 400px;
+}
+
+.id-item {
+    display: none;
+}
+
+.hide-cel {
+    display: none;
+}
+
+.col-id-pedido {
+    color: #ffffff00;
+}
+
+.col-produto {
+    display: none;
+}
+
+.clickrow,
+.dpedido {
+    cursor: pointer;
+}
+
+.clinha {
+    text-align: center;
+}
+
+input.money {
+    /* font-size: 12px;
+    padding: 6px;
+    min-width: 100px;
+    color: #000; */
+    background-color: #F2FAF8;
+}
+
+.tvaloritens {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.t-valoritens {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: rgb(0, 50, 143);
+    text-align: center;
+}
+
+.tsubtotal {
+    font-weight: 800;
+}
+
+#soma-final {
+    font-weight: 800;
+    font-size: 1.4em;
+    text-align: center;
+    color: #000;
+    background-color: #fff08f;
+    text-align: center;
+}
+
+#tFatura {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #fff;
+    background-color: green;
+    text-align: center;
+}
+
+.botaosalvar {
+    position: relative;
+    left: 89%;
+    top: -30px;
+}
+
+.botaosalvar1 {
+    position: relative;
+    left: 25%;
+    top: 0px;
+}
+
+.fa-info-circle {
+    color: #239df7;
+    font-size: 14px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+.btn-resp-show {
+    display: none;
+}
+
+@media screen and (max-width: 550px) {
+    .hideColmns {
+        width: 20%;
+    }
+    .btn-resp {
+        display: none;
+    }
+    .btn-resp-show {
+        display: block;
+    }
+}
+
+
+/* OFF CANVAS EDITAR CLIENTE */
+
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}
+
+.ui-dialog-titlebar {
+    padding: 20px;
+    background-color: rgb(212, 212, 212);
+}
+
+.ui_titulo {
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.editar_novo_cliente {
+    background-color: #F2FAF8;
+}
+
+.editar_cliente {
+    background-color: #F2FAF8;
+}
+
+.overlays {
+    height: 100%;
+    position: fixed;
+    width: 0;
+    z-index: 1034;
+    /* padding: 0; */
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.sidenav {
+    background-color: #F2FAF8;
+    border-left: 1px solid rgb(190, 190, 190);
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1036;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(17, 17, 17);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #1dff8e;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-right: 50px;
+}
+
+.situacao-label {
+    border-bottom: solid 1px #ccc;
+}
+
+#situacao1 {
+    margin-left: 3%;
+}
+
+#situacao2 {
+    margin-left: 20%;
+}
+
+#situacao3 {
+    margin-left: 20%;
+}
+
+.formIcon {
+    cursor: pointer;
+    font-size: 12pt;
+    text-decoration: none!important;
+    color: rgb(185, 185, 185);
+}
+
+.input_icones {
+    position: absolute;
+    right: 5px;
+    z-index: 1037;
+    top: 26px;
+    line-height: 30px;
+}
+
+#main {
+    transition: margin-right .5s;
+    padding: 16px;
+}
+
+#canvasFecha {
+    display: none;
+}
+
+#fechaform_cliente {
+    display: none;
+}
+
+#fechaform_novo_cliente {
+    display: none;
+}
+
+#x_editar_novo_cliente {
+    z-index: 1037;
+    opacity: 0.75;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 0px;
+    margin-top: 25px;
+    background-color: #37A661;
+    font-weight: 900;
+    color: #fff;
+}
+
+#x_editar_cliente {
+    z-index: 1037;
+    opacity: 0.75;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 0px;
+    margin-top: 25px;
+    background-color: #37A661;
+    font-weight: 900;
+    color: #fff;
+}
+
+#modalblur {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.data-de-registro {
+    margin-left: 4%;
+    padding: 5px;
+}
+
+
+/* modal update itens */
+
+
+/* #atualiza_produto {
+    display: none;
+} */
+
+@media only screen and (max-width: 450px) {
+    #nome-prepend {
+        display: none;
+    }
+    #x_editar_cliente {
+        margin-top: 20px;
+        font-size: 11px;
+    }
+    .ui_titulo {
+        font-size: 19px;
+    }
+    #situacao1 {
+        margin-left: 2%;
+    }
+    #situacao2 {
+        margin-left: 8%;
+    }
+    #situacao3 {
+        margin-left: 6%;
+    }
+    .canvas_titulo {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 25px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}

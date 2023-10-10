@@ -1,0 +1,17 @@
+.badge-cadastrantes {
+    top: 41% !important;
+}
+
+.submitBtn {
+    margin-top: 20px;
+    float: right;
+    margin-right: 40px;
+}
+
+#alerta-erro {
+    display: none;
+}
+
+#alerta-ok {
+    display: none;
+}

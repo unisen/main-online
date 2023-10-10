@@ -1,0 +1,19 @@
+{
+    "id": "1",
+    "prefixo": "ON",
+    "numeracao": "8000",
+    "sufixo": "sufix",
+    "incluir_data": "Sim",
+    "nome_empresa": "ROTA COMERCIO E DISTRIBUIÇÃO",
+    "documentacao_empresa": "CNPJ: 26.269.338/0001-37 – IE: 10.727.706-9",
+    "endereco_empresa": "Avenida Rio Verde, N° SN, QD 29 LT 17\r\nCEP: 74843660 – Goiânia, GO                           ",
+    "email_empresa": "contato@rotarepresenta.com.br  ",
+    "telefone_empresa": "+55 62 98312-4900",
+    "website_empresa": "https://www.rotarepresenta.com.br/",
+    "smtp_email_host": "smtp.rotarepresenta.com.br",
+    "email_envio_fatura": "send@rotarepresenta.com.br",
+    "senha_email_envio": "Bucetao99#",
+    "nome_email_envio": "ROTA COMERCIO E DISTRIBUIÇÃO",
+    "assunto_email_envio": "Envio de Fatura do Pedido",
+    "msg_body_email_envio": "Olá,\r\nSua fatura está anexada a este email.\r\n\r\nObrigado pela preferência."
+  }

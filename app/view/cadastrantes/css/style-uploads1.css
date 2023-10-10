@@ -1,0 +1,118 @@
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+#upload-form {
+    display: block;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 750px;
+    padding: 40px 40px;
+    background: white;
+    border-radius: 3px;
+}
+
+fieldset {
+    border: 0px solid green;
+    background-color: none;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+}
+
+.label-upload {
+    display: block;
+    margin: 0px;
+    padding: 15px 0px;
+    width: 100%;
+    height: 100%;
+    color: darkgreen;
+    border: none;
+    cursor: pointer;
+}
+
+#submit {
+    display: flex;
+    background-image: linear-gradient(to right, #083b0f, #012c1c);
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin: 0px auto 20px auto;
+    width: 60%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 0px 5px grey;
+    padding: 3%;
+}
+
+.upload {
+    width: 100%;
+    background-color: #D1E7A7;
+    text-align: center;
+    margin: 5px 0px 0px 0px;
+    padding: 0px;
+    border: 1px dashed darkgreen;
+    font-size: 18px;
+}
+
+.upload-box {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: black;
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.anexo {
+    display: none;
+}
+
+.loading {
+    cursor: wait;
+}
+
+.next {
+    display: block;
+    background-color: #181A13;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin: 0px auto;
+    font-size: 12px;
+    font-weight: bold;
+    width: 30%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.next:hover {
+    color: #D1E7A7;
+    background-color: #3E4532;
+}
+
+#criar_pastas_documentos {
+    display: none;
+    position: relative;
+    bottom: -31px;
+}
+
+#alerta-erro {
+    display: none;
+}
+
+#alerta-ok {
+    display: none;
+}
