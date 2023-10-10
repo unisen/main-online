@@ -465,7 +465,8 @@ include_once($path);
                             confirmButtonText: 'OK'
                         }).then((result) => {
                             if (result.isConfirmed) {
-
+                                 var table = $('#tbl_financeiro_cash').DataTable();
+                                 table.ajax.reload();
                                 //location.reload();
                                 //alert('ok');
                                 //location.href = "confirmacao-cadastro.php";

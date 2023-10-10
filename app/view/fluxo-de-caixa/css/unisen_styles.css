@@ -23,6 +23,10 @@ tr {
     background-color: rgb(248, 248, 248);
 }
 
+.dataTables_wrapper .dataTables_length select {
+    width: 32% !important;
+}
+
 @keyframes load {
     to{transform:rotate(360deg)};
 }
@@ -58,7 +62,18 @@ tr {
     div.dt-buttons {
         float: left;
         padding-left: 3% !important;
+        position: relative;
+        top: -4px;
+        margin-top: 3px;
     }
+
+    #tbl_financeiro_cash td {
+        cursor: pointer;
+    }
+
+    /* #container-cash {
+        display: contents !important;
+    } */
     /* .modal-footer {
         display: contents; 
     } */

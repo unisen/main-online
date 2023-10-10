@@ -67,15 +67,13 @@
                                 <div class="form-group col-sm-4 m-0">
                                     <label for="editar_vencimento" class="col-form-label s-12">Vencimento</label>
                                     <input type="text" name="editar_vencimento" id="editar_vencimento"
-                                         class="form-control r-0 light s-12"
-                                        value="" required>
+                                    class="form-control r-0 light s-12 date-time-picker" data-options='{ "timepicker":false,"format":"d/m/Y" }' value="" required>
                                 </div>
 
                                 <div class="form-group col-sm-4 m-0">
                                     <label for="editar_datapgto" class="col-form-label s-12">Data PGTO</label>
                                     <input type="text" name="editar_datapgto" id="editar_datapgto"
-                                         class="form-control r-0 light s-12"
-                                        value="" required>
+                                         class="form-control r-0 light s-12 date-time-picker" data-options='{ "timepicker":false,"format":"d/m/Y" }' value="" required>
                                 </div>
 
                                 <div class="form-group col-sm-4 m-0">
