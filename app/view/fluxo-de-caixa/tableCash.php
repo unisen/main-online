@@ -28,7 +28,7 @@ function converteDinheiro($num)
 ?>
 <div class="row">
     <div class="table-responsive" id="container-cash">
-        <form>
+        
             <table id="tbl_financeiro_cash" class="table table-bordered hover compact nowrap" style="width:100%">
                 <thead>
                     <tr>
@@ -48,7 +48,7 @@ function converteDinheiro($num)
                     </tr>
                 </thead>
             </table>
-        </form>
+        
     </div>
 </div>
 <!-- <div>

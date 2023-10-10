@@ -286,39 +286,39 @@ include_once($path);
                     'url': 'datatable.php'
                 },
                 'columns': [{
-                        data: 'ID',
+                        data: 'id',
                         className: "dlinecashitem"
                     },
                     {
-                        data: 'Mês',
+                        data: 'mes',
                         className: "dlinecashitem"
                     },
                     {
-                        data: 'Tipo',
+                        data: 'tipo',
                         className: "dlinecashitem"
                     },
                     {
-                        data: 'NF/CPF',
+                        data: 'nf_cpf',
                         className: "dlinecashitem"
                     },
                     {
-                        data: 'Cliente/Fornecedor',
+                        data: 'cliente_fornecedor',
                         className: "dlinecashitem"
                     },
                     {
-                        data: 'Centro de Custo',
+                        data: 'ccusto',
                         className: "dlinecashitem"
                     },
                     {
-                        data: 'Plano de Contas',
+                        data: 'pcontas',
                         className: "dlinecashitem"
                     },
                     {
-                        data: 'Banco',
+                        data: 'banco',
                         className: "dlinecashitem"
                     },
                     {
-                        data: 'Vencimento',
+                        data: 'vencimento',
                         className: "dlinecashitem",
                         render: function(data, type, row) {
                             var dateSplit = data.split('-');
@@ -328,7 +328,7 @@ include_once($path);
                         }
                     },
                     {
-                        data: 'Data Pgto',
+                        data: 'data_pgto',
                         className: "dlinecashitem",
                         render: function(data, type, row) {
                             var dateSplit = data.split('-');
@@ -338,17 +338,17 @@ include_once($path);
                         }
                     },
                     {
-                        data: 'Valor Titulo',
+                        data: 'valor_titulo',
                         className: "dlinecashitem",
                         render: $.fn.dataTable.render.number('.', ',', 2)
                     },
                     {
-                        data: 'Valor Pago',
+                        data: 'valor_pago',
                         className: "dlinecashitem",
                         render: $.fn.dataTable.render.number('.', ',', 2)
                     },
                     {
-                        data: 'Detalhe',
+                        data: 'detalhe',
                         className: "dlinecashitem"
                     }
                 ],
