@@ -94,7 +94,7 @@
 
                                 <div class="form-group col-sm-4 m-0">
                                     <label for="add_detalhe" class="col-form-label s-12">Detalhe</label>
-                                    <input type="text" name="add_detalhe" id="add_detalhe"
+                                    <input type="text" name="add_detalhe" id="editar_detalhe"
                                          class="form-control r-0 light s-12"
                                         value="" required>
                                 </div>                              

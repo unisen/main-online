@@ -108,18 +108,18 @@ include_once($path);
 
         <script>
         /*
-            *  Add sidebar classes (sidebar-mini sidebar-collapse sidebar-expanded-on-hover) in body tag
-            *  you can remove this script tag and add classes directly to body
-            *  this is only for demo
-            .fab-top {
-                top: 505px;
-            }
-            .fab-right-bottom {
-                right: 18px;
-                bottom: -16px;
-                z-index: 1;
-            }
-            */
+                         *  Add sidebar classes (sidebar-mini sidebar-collapse sidebar-expanded-on-hover) in body tag
+                         *  you can remove this script tag and add classes directly to body
+                         *  this is only for demo
+                         .fab-top {
+                                top: 505px;
+                            }
+                            .fab-right-bottom {
+                                right: 18px;
+                                bottom: -16px;
+                                z-index: 1;
+                            }
+                         */
         //document.body.className += ' sidebar-mini' + ' sidebar-collapse' + ' sidebar-expanded-on-hover' + ' sidebar-top-offset';
         </script>
         <?php
@@ -238,23 +238,11 @@ include_once($path);
         <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.print.min.js"></script>
 
 
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.2/moment.min.js">
-        </script>
-
-        <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js">
-        </script>
-
-        <script type="text/javascript" src="https://cdn.datatables.net/plug-ins/1.10.16/sorting/datetime-moment.js">
-        </script>
-
-        <script type="text/javascript" src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/datetime.js">
-        </script> -->
-
         <!-- Mascaras  -->
         <script src="js/jquery.mask.js"></script>
         <script src="js/jquery.mask.min.js"></script>
         <script src="js/jquery-maskmoney.js"></script>
-
+        
         <script>
         $(document).ready(function() {
             $(".money").maskMoney({
@@ -264,8 +252,8 @@ include_once($path);
             });
         });
         </script>
-
-
+        
+        
         <script>
         function loading_unisen() {
             document.getElementsByClassName('box-load')[0].style.display = 'none';
@@ -273,85 +261,10 @@ include_once($path);
         }
         </script>
 
-
-        <script type="text/javascript">
+        <script>
         $(document).ready(function() {
-            //DataTable.datetime('YYYY-MM-DD');
 
             $('#tbl_financeiro_cash').DataTable({
-                'processing': true,
-                'serverSide': true,
-                'serverMethod': 'post',
-                'ajax': {
-                    'url': 'datatable.php'
-                },
-                'columns': [{
-                        data: 'ID',
-                        className: "dlinecashitem"
-                    },
-                    {
-                        data: 'Mês',
-                        className: "dlinecashitem"
-                    },
-                    {
-                        data: 'Tipo',
-                        className: "dlinecashitem"
-                    },
-                    {
-                        data: 'NF/CPF',
-                        className: "dlinecashitem"
-                    },
-                    {
-                        data: 'Cliente/Fornecedor',
-                        className: "dlinecashitem"
-                    },
-                    {
-                        data: 'Centro de Custo',
-                        className: "dlinecashitem"
-                    },
-                    {
-                        data: 'Plano de Contas',
-                        className: "dlinecashitem"
-                    },
-                    {
-                        data: 'Banco',
-                        className: "dlinecashitem"
-                    },
-                    {
-                        data: 'Vencimento',
-                        className: "dlinecashitem",
-                        render: function(data, type, row) {
-                            var dateSplit = data.split('-');
-                            return type === "display" || type === "filter" ?
-                                dateSplit[2] + '/' + dateSplit[1] + '/' + dateSplit[0] :
-                                data;
-                        }
-                    },
-                    {
-                        data: 'Data Pgto',
-                        className: "dlinecashitem",
-                        render: function(data, type, row) {
-                            var dateSplit = data.split('-');
-                            return type === "display" || type === "filter" ?
-                                dateSplit[2] + '/' + dateSplit[1] + '/' + dateSplit[0] :
-                                data;
-                        }
-                    },
-                    {
-                        data: 'Valor Titulo',
-                        className: "dlinecashitem",
-                        render: $.fn.dataTable.render.number('.', ',', 2)
-                    },
-                    {
-                        data: 'Valor Pago',
-                        className: "dlinecashitem",
-                        render: $.fn.dataTable.render.number('.', ',', 2)
-                    },
-                    {
-                        data: 'Detalhe',
-                        className: "dlinecashitem"
-                    }
-                ],
                 "responsive": true,
                 "autoWidth": false,
                 "order": [
@@ -375,7 +288,6 @@ include_once($path);
                         responsivePriority: 4,
                         targets: 7
                     }
-
                 ],
                 /* dom: 'Bfrtip', */
 
@@ -384,12 +296,12 @@ include_once($path);
                     'copy', 'csv', 'excel', 'pdf', 'print'
                 ]
             })
+
         });
         </script>
 
         <script>
         $(document).ready(function() {
-
             var table = $('#tbl_financeiro_cash').DataTable();
 
             //ajusta as colunas
@@ -398,29 +310,27 @@ include_once($path);
 
             $('#tbl_financeiro_cash tbody').on('click', 'tr td.dlinecashitem', function() {
 
-                var currentRow = $(this).closest("tr");
-                //var col1=currentRow.find("td:eq(0)").text(); 
-                //var data = table.row(this).data();
+                var data = table.row(this).data();
 
-                $('#editar_id').val(currentRow.find("td:eq(0)").text());
-                $('#editar_mes').val(currentRow.find("td:eq(1)").text());
-                $('#editar_tipo').val(currentRow.find("td:eq(2)").text());
-                $('#editar_nfcpf').val(currentRow.find("td:eq(3)").text());
-                $('#editar_cliente').val(currentRow.find("td:eq(4)").text());
+                $('#editar_id').val(data[0]);
+                $('#editar_mes').val(data[1]);
+                $('#editar_tipo').val(data[2]);
+                $('#editar_nfcpf').val(data[3]);
+                $('#editar_cliente').val(data[4]);
 
-                $('#editar_ccusto').val(currentRow.find("td:eq(5)").text());
-                $('#editar_pcontas').val(currentRow.find("td:eq(6)").text());
-                $('#editar_banco').val(currentRow.find("td:eq(7)").text());
-                $('#editar_vencimento').val(currentRow.find("td:eq(8)").text());
-                $('#editar_datapgto').val(currentRow.find("td:eq(9)").text());
+                $('#editar_ccusto').val(data[5]);
+                $('#editar_pcontas').val(data[6]);
+                $('#editar_banco').val(data[7]);
+                $('#editar_vencimento').val(data[8]);
+                $('#editar_datapgto').val(data[9]);
 
-                $('#editar_valortit').val(currentRow.find("td:eq(10)").text());
-                $('#editar_valorpgto').val(currentRow.find("td:eq(11)").text());
-                $('#editar_detalhe').val(currentRow.find("td:eq(12)").text());
+                $('#editar_valortit').val(data[10]);
+                $('#editar_valorpgto').val(data[11]);
+                $('#editar_detalhe').val(data[12]);
 
                 $('#modalEditCash').modal('show');
 
-                //alert(col1);
+                //alert(data);
                 //openNav();
                 //var url = "editar_pedido.php?numero=" + data[1];
                 //window.location.replace(url);
@@ -465,7 +375,7 @@ include_once($path);
                             confirmButtonText: 'OK'
                         }).then((result) => {
                             if (result.isConfirmed) {
-
+                                
                                 //location.reload();
                                 //alert('ok');
                                 //location.href = "confirmacao-cadastro.php";
@@ -490,51 +400,51 @@ include_once($path);
         }
         </script>
 
-        <script>
+<script>
         function adiciona_item_cash() {
 
-            var valorTitulo = $('#add_valortit').val();
-            alert(valorTitulo);
+           var valorTitulo = $('#add_valortit').val(); 
+           alert(valorTitulo);
 
 
-            /*  $.ajax({
-                 method: "POST",
-                 url: "salva_item_cash.php",
-                 data: $("#editar_financeiro").serialize(),
-                 dataType: "text",
-                 success: function(strMessage) {
-                     $("#message").text(strMessage);
-                     if ($.trim(strMessage) == 'sucesso') {
-                         Swal.fire({
-                             title: '',
-                             text: "Dados atualizados",
-                             icon: 'success',
-                             confirmButtonColor: '#3085d6',
-                             cancelButtonColor: '#d33',
-                             confirmButtonText: 'OK'
-                         }).then((result) => {
-                             if (result.isConfirmed) {
-                                 //location.reload();
-                                 //alert('ok');
-                                 //location.href = "confirmacao-cadastro.php";
-                                 //$('.btn-proximo2').css("display", "initial");
-                                 //$("#btn-proximo2").removeAttr("disabled");
-                                 //$("#btn-proximo2").removeClass("btn-proximo2");
-                                 //$('#enviar_mensagem').find('input').val('');
-                             }
-                         })
-                     } else {
-                         Swal.fire({
-                             icon: 'error',
-                             title: 'Oops...',
-                             text: strMessage,
+           /*  $.ajax({
+                method: "POST",
+                url: "salva_item_cash.php",
+                data: $("#editar_financeiro").serialize(),
+                dataType: "text",
+                success: function(strMessage) {
+                    $("#message").text(strMessage);
+                    if ($.trim(strMessage) == 'sucesso') {
+                        Swal.fire({
+                            title: '',
+                            text: "Dados atualizados",
+                            icon: 'success',
+                            confirmButtonColor: '#3085d6',
+                            cancelButtonColor: '#d33',
+                            confirmButtonText: 'OK'
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                //location.reload();
+                                //alert('ok');
+                                //location.href = "confirmacao-cadastro.php";
+                                //$('.btn-proximo2').css("display", "initial");
+                                //$("#btn-proximo2").removeAttr("disabled");
+                                //$("#btn-proximo2").removeClass("btn-proximo2");
+                                //$('#enviar_mensagem').find('input').val('');
+                            }
+                        })
+                    } else {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: strMessage,
 
-                         });
+                        });
 
-                     }
-                 }
+                    }
+                }
 
-             }); */
+            }); */
         }
         </script>
 
