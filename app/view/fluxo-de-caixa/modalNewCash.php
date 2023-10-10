@@ -130,7 +130,7 @@ $(document).ready(function() {
 
     $("#modalNewCash").on('hide.bs.modal', function() {
 
-        location.reload();
+        //location.reload();
     });
 
 });

@@ -375,6 +375,7 @@ include_once($path);
                             confirmButtonText: 'OK'
                         }).then((result) => {
                             if (result.isConfirmed) {
+                                
                                 //location.reload();
                                 //alert('ok');
                                 //location.href = "confirmacao-cadastro.php";
@@ -404,7 +405,7 @@ include_once($path);
 
            var valorTitulo = $('#add_valortit').val(); 
            alert(valorTitulo);
-           
+
 
            /*  $.ajax({
                 method: "POST",

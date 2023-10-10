@@ -131,7 +131,8 @@ $(document).ready(function() {
 
     $("#modalEditCash").on('hide.bs.modal', function() {
 
-        location.reload();
+        $('#tbl_financeiro_cash').DataTable().clear();
+        //location.reload();
     });
 
 });
