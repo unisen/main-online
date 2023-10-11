@@ -233,7 +233,7 @@ include_once($path);
                                                     <!-- Card Header - Dropdown -->
                                                     <div
                                                         class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                                        <h6 class="m-0 font-weight-bold text-primary">Earnings Overview
+                                                        <h6 class="m-0 font-weight-bold text-primary">Movimentação 2023
                                                         </h6>
                                                         <div class="dropdown no-arrow">
                                                             <a class="dropdown-toggle" href="#" role="button"
@@ -253,6 +253,74 @@ include_once($path);
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <?php 
+                                                    
+                                                    require_once '../../config/database/conexao-unisen.php';
+
+                                                    $sql = "SELECT `mes` FROM `vmvalpgto_mes`";
+                                                    $financeiro_cash = mysqli_query($con_unisen, $sql);
+                                                    //print_r($fluxo_de_caixa);
+                                                    $contChart = 0;
+                                                    // Variavel do data-labels no chart
+                                                    $labelsChart = "[";
+                                                    while($fetch = mysqli_fetch_row($financeiro_cash)){
+                                                        if ($contChart == 0) {
+                                                            //echo "'$fetch[0]'";
+                                                            $labelsChart .=  "'$fetch[0]'";
+                                                            $contChart++;
+                                                        }
+                                                        else {
+                                                            //echo ", '$fetch[0]'";
+                                                            $labelsChart .=  ", '$fetch[0]'";
+                                                        }
+                                                    }
+                                                    //echo "]";
+                                                    $labelsChart .=  "]";        
+                                                    
+                                                    $sql = "SELECT total_vpago FROM `vmvalpgto_mes`";
+                                                    $financeiro_cash = mysqli_query($con_unisen, $sql);
+                                                    //print_r($fluxo_de_caixa);
+                                                    $contChart = 0;
+                                                    // Variavel do data-labels no chart
+                                                    $labelsChartPagar = "[";
+                                                    while($fetch = mysqli_fetch_row($financeiro_cash)){
+                                                        if ($contChart == 0) {
+                                                            //echo "'$fetch[0]'";
+                                                            $labelsChartPagar .=  "$fetch[0]";
+                                                            $contChart++;
+                                                        }
+                                                        else {
+                                                            //echo ", '$fetch[0]'";
+                                                            $labelsChartPagar .=  ", $fetch[0]";
+                                                        }
+                                                    }
+                                                    //echo "]";
+                                                    $labelsChartPagar .=  "]"; 
+                                                    //echo $labelsChartPagar;
+
+                                                    $sql = "SELECT total_vpago FROM `vmvalreceber_mes`";
+                                                    $financeiro_cash = mysqli_query($con_unisen, $sql);
+                                                    //print_r($fluxo_de_caixa);
+                                                    $contChart = 0;
+                                                    // Variavel do data-labels no chart
+                                                    $labelsChartReceber = "[";
+                                                    while($fetch = mysqli_fetch_row($financeiro_cash)){
+                                                        if ($contChart == 0) {
+                                                            //echo "'$fetch[0]'";
+                                                            $labelsChartReceber .=  "$fetch[0]";
+                                                            $contChart++;
+                                                        }
+                                                        else {
+                                                            //echo ", '$fetch[0]'";
+                                                            $labelsChartReceber .=  ", $fetch[0]";
+                                                        }
+                                                    }
+                                                    //echo "]";
+                                                    $labelsChartReceber .=  "]"; 
+                                                    
+                                                    //echo $labelsChartReceber;
+
+                                                    ?>
                                                     <!-- Card Body -->
                                                     <div class="card-body">
                                                         <div class="chart-area" style="height: 250px">
@@ -264,10 +332,90 @@ include_once($path);
                                                                     <div class=""></div>
                                                                 </div>
                                                             </div>
-                                                            <canvas id="myAreaChart"
+                                                            <!--  <canvas id="myAreaChart"
                                                                 style="display: block; width: 300px; height: 160px;"
                                                                 width="900" height="480"
-                                                                class="chartjs-render-monitor"></canvas>
+                                                                class="chartjs-render-monitor"></canvas> -->
+                                                            <canvas data-chart="line" data-dataset="[
+                                                                <?php echo $labelsChartPagar; ?>,
+                                                                <?php echo $labelsChartReceber; ?>,
+                                                
+                                                            ]" data-labels="<?php echo $labelsChart; ?>"
+                                                                data-dataset-options="[
+                                                            {   label:'PAGAR',
+                                                                fill: true,
+                                                                backgroundColor: 'rgba(50,141,255,.2)',
+                                                                borderColor: '#328dff',
+                                                                pointBorderColor: '#328dff',
+                                                                pointBackgroundColor: '#fff',
+                                                                pointBorderWidth: 2,
+                                                                borderWidth: 1,
+                                                                borderJoinStyle: 'miter',
+                                                                pointHoverBackgroundColor: '#328dff',
+                                                                pointHoverBorderColor: '#328dff',
+                                                                pointHoverBorderWidth: 1,
+                                                                pointRadius: 3,
+                                                                
+                                                            },
+                                                            {  
+                                                                label:'RECEBER',
+                                                                fill: false,
+                                                                borderDash: [5, 5],
+                                                                backgroundColor: 'rgba(87,115,238,.3)',
+                                                                borderColor: '#2979ff',
+                                                                pointBorderColor: '#2979ff',
+                                                                pointBackgroundColor: '#2979ff',
+                                                                pointBorderWidth: 2,
+                                                
+                                                                borderWidth: 1,
+                                                                borderJoinStyle: 'miter',
+                                                                pointHoverBackgroundColor: '#2979ff',
+                                                                pointHoverBorderColor: '#fff',
+                                                                pointHoverBorderWidth: 1,
+                                                                pointRadius: 3,
+                                                                
+                                                            }
+                                                            ]" data-options="{
+                                                                    maintainAspectRatio: false,
+                                                                    legend: {
+                                                                        display: true
+                                                                    },
+                                                        
+                                                                    scales: {
+                                                                        xAxes: [{
+                                                                            display: true,
+                                                                            gridLines: {
+                                                                                zeroLineColor: '#eee',
+                                                                                color: '#eee',
+                                                                            
+                                                                                borderDash: [5, 5],
+                                                                            }
+                                                                        }],
+                                                                        yAxes: [{
+                                                                            display: true,
+                                                                            gridLines: {
+                                                                                zeroLineColor: '#eee',
+                                                                                color: '#eee',
+                                                                                borderDash: [5, 5],
+                                                                            }
+                                                                        }]
+                                                        
+                                                                    },
+                                                                    elements: {
+                                                                        line: {
+                                                                        
+                                                                            tension: 0.4,
+                                                                            borderWidth: 1
+                                                                        },
+                                                                        point: {
+                                                                            radius: 2,
+                                                                            hitRadius: 10,
+                                                                            hoverRadius: 6,
+                                                                            borderWidth: 4
+                                                                        }
+                                                                    }
+                                                                }">
+                                                            </canvas>
                                                         </div>
                                                     </div>
                                                 </div>
