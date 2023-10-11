@@ -3,9 +3,9 @@
     to{transform:rotate(360deg)};
 }
 .pre {
-    width: 80px;
-    height: 80px;
-    background-image: url("../img/icon_loader.png");
+    width: 160px;
+    height: 160px;
+    background-image: url("../img/loader.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -21,7 +21,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
+    padding: 1px;
 }
 
 
@@ -31,7 +31,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #F5F8FA;
+    background-color: #91a46f !important;
     z-index: 9998;
     text-align: center;
 }
