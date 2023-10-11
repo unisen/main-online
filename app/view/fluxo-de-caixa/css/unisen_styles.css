@@ -31,7 +31,7 @@ tr {
 /* #container-cash {
     display: contents !important;
 } */
-#tbl_financeiro_cash > thead > tr > th.sorting_desc {
+#tbl_financeiro_cash > thead > tr > th:nth-child(1) {
     width: 5% !important;
 }   
 
