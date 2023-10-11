@@ -18,97 +18,90 @@
                                 <div class="form-group col-sm-4 m-0">
                                     <label for="editar_mes" class="col-form-label s-12">Mês</label>
                                     <input type="text" name="editar_mes" id="editar_mes"
-                                         class="form-control r-0 light s-12"
-                                        value="" required>
+                                        class="form-control r-0 light s-12" value="" required>
                                 </div>
 
                                 <div class="form-group col-sm-4 m-0">
                                     <label for="editar_tipo" class="col-form-label s-12">Tipo</label>
                                     <input type="text" name="editar_tipo" id="editar_tipo"
-                                         class="form-control r-0 light s-12"
-                                        value="" required>
+                                        class="form-control r-0 light s-12" value="" required>
                                 </div>
 
                                 <div class="form-group col-sm-4 m-0">
                                     <label for="editar_nfcpf" class="col-form-label s-12">NF / CPF</label>
                                     <input type="text" name="editar_nfcpf" id="editar_nfcpf"
-                                         class="form-control r-0 light s-12"
-                                        value="" required>
+                                        class="form-control r-0 light s-12" value="" required>
                                 </div>
 
                                 <div class="form-group col-sm-4 m-0">
                                     <label for="editar_cliente" class="col-form-label s-12">Cliente / Fornecedor</label>
                                     <input type="text" name="editar_cliente" id="editar_cliente"
-                                         class="form-control r-0 light s-12"
-                                        value="" required>
+                                        class="form-control r-0 light s-12" value="" required>
                                 </div>
 
                                 <div class="form-group col-sm-4 m-0">
                                     <label for="editar_ccusto" class="col-form-label s-12">Centro de Custo</label>
                                     <input type="text" name="editar_ccusto" id="editar_ccusto"
-                                         class="form-control r-0 light s-12"
-                                        value="" required>
+                                        class="form-control r-0 light s-12" value="" required>
                                 </div>
 
                                 <div class="form-group col-sm-4 m-0">
                                     <label for="editar_pcontas" class="col-form-label s-12">Plano de Contas</label>
                                     <input type="text" name="editar_pcontas" id="editar_pcontas"
-                                         class="form-control r-0 light s-12"
-                                        value="" required>
+                                        class="form-control r-0 light s-12" value="" required>
                                 </div>
 
                                 <div class="form-group col-sm-4 m-0">
                                     <label for="editar_banco" class="col-form-label s-12">Banco</label>
                                     <input type="text" name="editar_banco" id="editar_banco"
-                                         class="form-control r-0 light s-12"
-                                        value="" required>
+                                        class="form-control r-0 light s-12" value="" required>
                                 </div>
 
                                 <div class="form-group col-sm-4 m-0">
                                     <label for="editar_vencimento" class="col-form-label s-12">Vencimento</label>
                                     <input type="text" name="editar_vencimento" id="editar_vencimento"
-                                    class="form-control r-0 light s-12 date-time-picker" data-options='{ "timepicker":false,"format":"d/m/Y" }' value="" required>
+                                        class="form-control r-0 light s-12 date-time-picker"
+                                        data-options='{ "timepicker":false,"format":"d/m/Y" }' value="" required>
                                 </div>
 
                                 <div class="form-group col-sm-4 m-0">
                                     <label for="editar_datapgto" class="col-form-label s-12">Data PGTO</label>
                                     <input type="text" name="editar_datapgto" id="editar_datapgto"
-                                         class="form-control r-0 light s-12 date-time-picker" data-options='{ "timepicker":false,"format":"d/m/Y" }' value="" required>
+                                        class="form-control r-0 light s-12 date-time-picker"
+                                        data-options='{ "timepicker":false,"format":"d/m/Y" }' value="" required>
                                 </div>
 
                                 <div class="form-group col-sm-4 m-0">
                                     <label for="editar_valortit" class="col-form-label s-12">Valor do Título</label>
                                     <input type="text" name="editar_valortit" id="editar_valortit"
-                                         class="money form-control r-0 light s-12"
-                                        value="" required>
+                                        class="money form-control r-0 light s-12" value="" required>
                                 </div>
 
                                 <div class="form-group col-sm-4 m-0">
                                     <label for="editar_valorpgto" class="col-form-label s-12">Valor Pago</label>
                                     <input type="text" name="editar_valorpgto" id="editar_valorpgto"
-                                         class="money form-control r-0 light s-12"
-                                        value="" required>
+                                        class="money form-control r-0 light s-12" value="" required>
                                 </div>
 
                                 <div class="form-group col-sm-4 m-0">
                                     <label for="editar_detalhe" class="col-form-label s-12">Detalhe</label>
                                     <input type="text" name="editar_detalhe" id="editar_detalhe"
-                                         class="form-control r-0 light s-12"
-                                        value="" required>
-                                </div>                              
-
+                                        class="form-control r-0 light s-12" value="" required>
+                                </div>
+                                <div class="form-group col-sm-12">
+                                    <hr>
+                                    <a href="#" class="btn btn-primary"
+                                        onclick="atualiza_item_cash()">Salvar</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
             </form>
-            <div class="modal-footer">
-                <div class="form-row row clearfix">
-                <a href="#" class="btn btn-primary btn-sm ml-3 d-none d-sm-block" onclick="atualiza_item_cash()">Salvar</a>
 
-                </div>
-            </div>
+
+
         </div>
     </div>
 </div>
@@ -129,10 +122,9 @@ $(document).ready(function() {
 
     $("#modalEditCash").on('hide.bs.modal', function() {
 
-        $('#tbl_financeiro_cash').DataTable().clear();
+        //$('#tbl_financeiro_cash').DataTable().clear();
         //location.reload();
     });
 
 });
 </script>
-

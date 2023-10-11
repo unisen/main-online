@@ -1,8 +1,5 @@
 <?php
 
-
-
-
 if($_SERVER['HTTP_HOST'] == 'localhost' or strpos($_SERVER['HTTP_HOST'],"192.168") !== false) {
     // Change this to your connection info.
     $host = 'localhost';

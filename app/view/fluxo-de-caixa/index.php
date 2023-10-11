@@ -465,6 +465,7 @@ include_once($path);
                         }).then((result) => {
                             if (result.isConfirmed) {
                                  var table = $('#tbl_financeiro_cash').DataTable();
+                                 table.clear();
                                  table.ajax.reload();
                                 //location.reload();
                                 //alert('ok');
