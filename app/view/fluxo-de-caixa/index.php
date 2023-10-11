@@ -43,88 +43,22 @@ include_once($path);
 
 <link rel="stylesheet" href="css/unisen_styles.css">
 
-<body class="light index-loader" onload="loading_unisen()">
+<body class="light">
 
     <!-- Pre loader -->
     <div id="loader" class="loader">
         <div class="plane-container">
             <div class="preloader-wrapper big active">
-                <!-- <div class="spinner-layer spinner-blue">
-                    <div class="circle-clipper left">
-                        <div class="circle"></div>
-                    </div>
-                    <div class="gap-patch">
-                        <div class="circle"></div>
-                    </div>
-                    <div class="circle-clipper right">
-                        <div class="circle"></div>
-                    </div>
-                </div>
-
-                <div class="spinner-layer spinner-red">
-                    <div class="circle-clipper left">
-                        <div class="circle"></div>
-                    </div>
-                    <div class="gap-patch">
-                        <div class="circle"></div>
-                    </div>
-                    <div class="circle-clipper right">
-                        <div class="circle"></div>
-                    </div>
-                </div>
-
-                <div class="spinner-layer spinner-yellow">
-                    <div class="circle-clipper left">
-                        <div class="circle"></div>
-                    </div>
-                    <div class="gap-patch">
-                        <div class="circle"></div>
-                    </div>
-                    <div class="circle-clipper right">
-                        <div class="circle"></div>
-                    </div>
-                </div>
-
-                <div class="spinner-layer spinner-green">
-                    <div class="circle-clipper left">
-                        <div class="circle"></div>
-                    </div>
-                    <div class="gap-patch">
-                        <div class="circle"></div>
-                    </div>
-                    <div class="circle-clipper right">
-                        <div class="circle"></div>
-                    </div>
-                </div> -->
+                
                 <div class='box-load'>
                     <div class='pre'></div>
                 </div>
+
             </div>
         </div>
     </div>
 
-    <!-- <div class='box-load'>
-        <div class='pre'></div>
-    </div> -->
-
     <div id="app">
-
-        <script>
-        /*
-            *  Add sidebar classes (sidebar-mini sidebar-collapse sidebar-expanded-on-hover) in body tag
-            *  you can remove this script tag and add classes directly to body
-            *  this is only for demo
-            .fab-top {
-                top: 505px;
-            }
-            .fab-right-bottom {
-                right: 18px;
-                bottom: -16px;
-                z-index: 1;
-            }
-            */
-        //document.body.className += ' sidebar-mini' + ' sidebar-collapse' + ' sidebar-expanded-on-hover' + ' sidebar-top-offset';
-        </script>
         <?php
         $path =  $_SERVER['DOCUMENT_ROOT'];
         $path .= $unisen_url . 'app/includes/UI/sidebar.php';
@@ -149,9 +83,6 @@ include_once($path);
             $path =  $_SERVER['DOCUMENT_ROOT'];
             $path .= $unisen_url . 'app/includes/UI/sidebar-left.php';
             include_once($path);
-
-
-
             ?>
 
             <!-- Main Content -->
