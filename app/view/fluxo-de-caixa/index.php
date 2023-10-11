@@ -43,13 +43,13 @@ include_once($path);
 
 <link rel="stylesheet" href="css/unisen_styles.css">
 
-<body class="light" onload="loading_unisen()">
+<body class="light index-loader" onload="loading_unisen()">
 
     <!-- Pre loader -->
     <div id="loader" class="loader">
         <div class="plane-container">
             <div class="preloader-wrapper big active">
-                <div class="spinner-layer spinner-blue">
+                <!-- <div class="spinner-layer spinner-blue">
                     <div class="circle-clipper left">
                         <div class="circle"></div>
                     </div>
@@ -95,14 +95,17 @@ include_once($path);
                     <div class="circle-clipper right">
                         <div class="circle"></div>
                     </div>
+                </div> -->
+                <div class='box-load'>
+                    <div class='pre'></div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class='box-load'>
+    <!-- <div class='box-load'>
         <div class='pre'></div>
-    </div>
+    </div> -->
 
     <div id="app">
 
@@ -268,8 +271,10 @@ include_once($path);
 
         <script>
         function loading_unisen() {
+            
+            //document.getElementsByClassName('index-loader').style.backgroundColor = '#ABBA90';
             document.getElementsByClassName('box-load')[0].style.display = 'none';
-            //document.getElementsByClassName('container-fluid')[0].style.display = 'block';
+            document.getElementsByClassName('page')[0].style.display = 'block';
         }
         </script>
 
@@ -359,7 +364,7 @@ include_once($path);
                 columnDefs: [{
                         width: "10%",
                         responsivePriority: 1,
-                        targets: [0,4]
+                        targets: [0, 4]
                     },
                     {
                         width: '90%',
@@ -464,9 +469,9 @@ include_once($path);
                             confirmButtonText: 'OK'
                         }).then((result) => {
                             if (result.isConfirmed) {
-                                 var table = $('#tbl_financeiro_cash').DataTable();
-                                 table.clear();
-                                 table.ajax.reload();
+                                var table = $('#tbl_financeiro_cash').DataTable();
+                                table.clear();
+                                table.ajax.reload();
                                 //location.reload();
                                 //alert('ok');
                                 //location.href = "confirmacao-cadastro.php";
