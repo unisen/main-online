@@ -40,53 +40,19 @@ include_once($path);
     <!-- Pre loader -->
     <div id="loader" class="loader">
         <div class="plane-container">
-            <div class="preloader-wrapper big active">
-                            <div class="spinner-layer spinner-blue">
-                                <div class="circle-clipper left">
-                                    <div class="circle"></div>
-                                </div><div class="gap-patch">
-                                <div class="circle"></div>
-                            </div><div class="circle-clipper right">
-                                <div class="circle"></div>
-                            </div>
-                            </div>
+        <div class="preloader-wrapper big active">
+                
+                <div class='box-load'>
+                    <div class='pre'></div>
+                </div>
 
-                            <div class="spinner-layer spinner-red">
-                                <div class="circle-clipper left">
-                                    <div class="circle"></div>
-                                </div><div class="gap-patch">
-                                <div class="circle"></div>
-                            </div><div class="circle-clipper right">
-                                <div class="circle"></div>
-                            </div>
-                            </div>
-
-                            <div class="spinner-layer spinner-yellow">
-                                <div class="circle-clipper left">
-                                    <div class="circle"></div>
-                                </div><div class="gap-patch">
-                                <div class="circle"></div>
-                            </div><div class="circle-clipper right">
-                                <div class="circle"></div>
-                            </div>
-                            </div>
-
-                            <div class="spinner-layer spinner-green">
-                                <div class="circle-clipper left">
-                                    <div class="circle"></div>
-                                </div><div class="gap-patch">
-                                <div class="circle"></div>
-                            </div><div class="circle-clipper right">
-                                <div class="circle"></div>
-                            </div>
-                            </div>
-                        </div>
+            </div>
         </div>
     </div>
     <div id="app">
 
         <script>
-            /*
+        /*
                          *  Add sidebar classes (sidebar-mini sidebar-collapse sidebar-expanded-on-hover) in body tag
                          *  you can remove this script tag and add classes directly to body
                          *  this is only for demo
@@ -99,7 +65,7 @@ include_once($path);
                                 z-index: 1;
                             }
                          */
-            //document.body.className += ' sidebar-mini' + ' sidebar-collapse' + ' sidebar-expanded-on-hover' + ' sidebar-top-offset';
+        //document.body.className += ' sidebar-mini' + ' sidebar-collapse' + ' sidebar-expanded-on-hover' + ' sidebar-top-offset';
         </script>
         <?php
         $path =  $_SERVER['DOCUMENT_ROOT'];
@@ -111,9 +77,12 @@ include_once($path);
                 <div class="collapse" id="navbarToggleExternalContent">
                     <div class="bg-dark pt-2 pb-2 pl-4 pr-2">
                         <div class="search-bar">
-                            <input class="transparent s-24 text-white b-0 font-weight-lighter w-128 height-50" type="text" placeholder="start typing...">
+                            <input class="transparent s-24 text-white b-0 font-weight-lighter w-128 height-50"
+                                type="text" placeholder="start typing...">
                         </div>
-                        <a href="#" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" class="paper-nav-toggle paper-nav-white active "><i></i></a>
+                        <a href="#" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                            aria-expanded="false" aria-label="Toggle navigation"
+                            class="paper-nav-toggle paper-nav-white active "><i></i></a>
                     </div>
                 </div>
             </div>
@@ -160,7 +129,8 @@ include_once($path);
                                             <div class="col-sm-6">
                                                 <div class="form-group form-float">
                                                     <div class="form-line">
-                                                        <input type="text" class="form-control" name="smtpdebug" value="<?php echo $smtp_configs->smtpdebug; ?>">
+                                                        <input type="text" class="form-control" name="smtpdebug"
+                                                            value="<?php echo $smtp_configs->smtpdebug; ?>">
                                                         <label class="form-label">SMTPDebug</label>
                                                     </div>
                                                 </div>
@@ -168,7 +138,8 @@ include_once($path);
                                             <div class="col-sm-6">
                                                 <div class="form-group form-float">
                                                     <div class="form-line">
-                                                        <input type="text" class="form-control" name="charset" value="<?php echo $smtp_configs->charset; ?>">
+                                                        <input type="text" class="form-control" name="charset"
+                                                            value="<?php echo $smtp_configs->charset; ?>">
                                                         <label class="form-label">CharSet</label>
                                                     </div>
                                                 </div>
@@ -178,7 +149,8 @@ include_once($path);
                                             <div class="col-sm-6">
                                                 <div class="form-group form-float">
                                                     <div class="form-line">
-                                                        <input type="email" class="form-control" name="email_login" value="<?php echo $smtp_configs->email_login; ?>">
+                                                        <input type="email" class="form-control" name="email_login"
+                                                            value="<?php echo $smtp_configs->email_login; ?>">
                                                         <label class="form-label">Login Email</label>
                                                     </div>
                                                 </div>
@@ -186,7 +158,8 @@ include_once($path);
                                             <div class="col-sm-6">
                                                 <div class="form-group form-float">
                                                     <div class="form-line">
-                                                        <input type="text" class="form-control" name="password_login" value="<?php echo $smtp_configs->password_login; ?>">
+                                                        <input type="text" class="form-control" name="password_login"
+                                                            value="<?php echo $smtp_configs->password_login; ?>">
                                                         <label class="form-label">Login Password</label>
                                                     </div>
                                                 </div>
@@ -196,7 +169,8 @@ include_once($path);
                                             <div class="col-sm-6">
                                                 <div class="form-group form-float">
                                                     <div class="form-line">
-                                                        <input type="text" class="form-control" name="smtp_host" value="<?php echo $smtp_configs->smtp_host; ?>">
+                                                        <input type="text" class="form-control" name="smtp_host"
+                                                            value="<?php echo $smtp_configs->smtp_host; ?>">
                                                         <label class="form-label">SMTP Host</label>
                                                     </div>
                                                 </div>
@@ -204,7 +178,8 @@ include_once($path);
                                             <div class="col-sm-6">
                                                 <div class="form-group form-float">
                                                     <div class="form-line">
-                                                        <input type="text" class="form-control" name="smtp_port" value="<?php echo $smtp_configs->smtp_port; ?>">
+                                                        <input type="text" class="form-control" name="smtp_port"
+                                                            value="<?php echo $smtp_configs->smtp_port; ?>">
                                                         <label class="form-label">SMTP Port</label>
                                                     </div>
                                                 </div>
@@ -212,46 +187,55 @@ include_once($path);
                                         </div>
                                         <div class="form-group form-float">
                                             <div class="form-line">
-                                                <input type="email" class="form-control" name="email_from" value="<?php echo $smtp_configs->email_from; ?>">
+                                                <input type="email" class="form-control" name="email_from"
+                                                    value="<?php echo $smtp_configs->email_from; ?>">
                                                 <label class="form-label">Email do Remetente:</label>
                                             </div>
                                         </div>
 
                                         <div class="form-group form-float">
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="email_name_from" value="<?php echo $smtp_configs->email_name_from; ?>">
+                                                <input type="text" class="form-control" name="email_name_from"
+                                                    value="<?php echo $smtp_configs->email_name_from; ?>">
                                                 <label class="form-label">Nome do Remetente no Email</label>
                                             </div>
                                         </div>
 
                                         <div class="form-group form-float">
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="subject" value="<?php echo $smtp_configs->subject; ?>">
+                                                <input type="text" class="form-control" name="subject"
+                                                    value="<?php echo $smtp_configs->subject; ?>">
                                                 <label class="form-label">Subject</label>
                                             </div>
                                         </div>
 
                                         <div class="form-group form-float">
                                             <div class="form-line">
-                                                <input class="form-control" type="text" name="body_file" value="<?php echo $smtp_configs->body_file; ?>">
+                                                <input class="form-control" type="text" name="body_file"
+                                                    value="<?php echo $smtp_configs->body_file; ?>">
                                                 <label class="form-label">Arquivo do Corpo do Email</label>
                                             </div>
                                         </div>
                                         <div class="custom-control custom-checkbox mb-4">
-                                            <input type="checkbox" class="custom-control-input" id="customControlValidation1" name="server_mode" <?php if (isset($smtp_configs->server_mode) && $smtp_configs->server_mode == "on") echo " checked"; ?>>
-                                            <label class="custom-control-label" for="customControlValidation1">LOCALHOST SERVER</label>
+                                            <input type="checkbox" class="custom-control-input"
+                                                id="customControlValidation1" name="server_mode"
+                                                <?php if (isset($smtp_configs->server_mode) && $smtp_configs->server_mode == "on") echo " checked"; ?>>
+                                            <label class="custom-control-label" for="customControlValidation1">LOCALHOST
+                                                SERVER</label>
                                             <div class="invalid-feedback">Example invalid feedback text</div>
                                         </div>
 
                                         <div class="form-group form-float">
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="headers_from" value="<?php echo $smtp_configs->headers_from; ?>">
+                                                <input type="text" class="form-control" name="headers_from"
+                                                    value="<?php echo $smtp_configs->headers_from; ?>">
                                                 <label class="form-label">Headers From</label>
                                             </div>
                                         </div>
                                         <div class="form-group form-float">
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="headers_cc" value="<?php echo $smtp_configs->headers_cc; ?>">
+                                                <input type="text" class="form-control" name="headers_cc"
+                                                    value="<?php echo $smtp_configs->headers_cc; ?>">
                                                 <label class="form-label">Headers Cc:</label>
                                             </div>
                                         </div>
@@ -261,7 +245,10 @@ include_once($path);
                                                 <p class="salvar-success"><?php echo @$success; ?></p>
                                             </div>
                                         </div>
-                                        <button class="btn btn-success btn-lg toast-action waves-effect" type="submit" name="salvar" data-title="Hey, Bro!" data-message="Paper Panel has toast as well." data-type="success" data-position-class="toast-bottom-left">SALVAR</button>
+                                        <button class="btn btn-success btn-lg toast-action waves-effect" type="submit"
+                                            name="salvar" data-title="Hey, Bro!"
+                                            data-message="Paper Panel has toast as well." data-type="success"
+                                            data-position-class="toast-bottom-left">SALVAR</button>
                                     </form>
                                 </div>
                             </div>
@@ -281,7 +268,8 @@ include_once($path);
                                     <tr>
                                         <td class="campo-smtp">SMTPDebug</td>
                                         <td>
-                                            <span class="badge badge-success r-3"><?php echo $smtp_configs->smtpdebug; ?>
+                                            <span
+                                                class="badge badge-success r-3"><?php echo $smtp_configs->smtpdebug; ?>
                                             </span>
                                         </td>
                                     </tr>
@@ -352,7 +340,7 @@ include_once($path);
                                     <tr>
                                         <td class="campo-smtp">SERVIDOR LOCAL</td>
                                         <td>
-                                        <?php 
+                                            <?php 
                                             if (isset($smtp_configs->server_mode) && $smtp_configs->server_mode == "on") {
                                                 echo "ON";
                                             } else {
@@ -407,14 +395,14 @@ include_once($path);
 --- http://writing.colin-gourlay.com/safely-using-ready-before-including-jquery/
 -->
         <script>
-            (function($, d) {
-                $.each(readyQ, function(i, f) {
-                    $(f)
-                });
-                $.each(bindReadyQ, function(i, f) {
-                    $(d).bind("ready", f)
-                })
-            })(jQuery, document)
+        (function($, d) {
+            $.each(readyQ, function(i, f) {
+                $(f)
+            });
+            $.each(bindReadyQ, function(i, f) {
+                $(d).bind("ready", f)
+            })
+        })(jQuery, document)
         </script>
 </body>
 

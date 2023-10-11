@@ -31,53 +31,19 @@ include_once($path);
     <!-- Pre loader -->
     <div id="loader" class="loader">
         <div class="plane-container">
-            <div class="preloader-wrapper big active">
-                            <div class="spinner-layer spinner-blue">
-                                <div class="circle-clipper left">
-                                    <div class="circle"></div>
-                                </div><div class="gap-patch">
-                                <div class="circle"></div>
-                            </div><div class="circle-clipper right">
-                                <div class="circle"></div>
-                            </div>
-                            </div>
+        <div class="preloader-wrapper big active">
+                
+                <div class='box-load'>
+                    <div class='pre'></div>
+                </div>
 
-                            <div class="spinner-layer spinner-red">
-                                <div class="circle-clipper left">
-                                    <div class="circle"></div>
-                                </div><div class="gap-patch">
-                                <div class="circle"></div>
-                            </div><div class="circle-clipper right">
-                                <div class="circle"></div>
-                            </div>
-                            </div>
-
-                            <div class="spinner-layer spinner-yellow">
-                                <div class="circle-clipper left">
-                                    <div class="circle"></div>
-                                </div><div class="gap-patch">
-                                <div class="circle"></div>
-                            </div><div class="circle-clipper right">
-                                <div class="circle"></div>
-                            </div>
-                            </div>
-
-                            <div class="spinner-layer spinner-green">
-                                <div class="circle-clipper left">
-                                    <div class="circle"></div>
-                                </div><div class="gap-patch">
-                                <div class="circle"></div>
-                            </div><div class="circle-clipper right">
-                                <div class="circle"></div>
-                            </div>
-                            </div>
-                        </div>
+            </div>
         </div>
     </div>
     <div id="app">
 
         <script>
-            /*
+        /*
                          *  Add sidebar classes (sidebar-mini sidebar-collapse sidebar-expanded-on-hover) in body tag
                          *  you can remove this script tag and add classes directly to body
                          *  this is only for demo
@@ -90,7 +56,7 @@ include_once($path);
                                 z-index: 1;
                             }
                          */
-            //document.body.className += ' sidebar-mini' + ' sidebar-collapse' + ' sidebar-expanded-on-hover' + ' sidebar-top-offset';
+        //document.body.className += ' sidebar-mini' + ' sidebar-collapse' + ' sidebar-expanded-on-hover' + ' sidebar-top-offset';
         </script>
         <?php
         $path =  $_SERVER['DOCUMENT_ROOT'];
@@ -102,9 +68,12 @@ include_once($path);
                 <div class="collapse" id="navbarToggleExternalContent">
                     <div class="bg-dark pt-2 pb-2 pl-4 pr-2">
                         <div class="search-bar">
-                            <input class="transparent s-24 text-white b-0 font-weight-lighter w-128 height-50" type="text" placeholder="start typing...">
+                            <input class="transparent s-24 text-white b-0 font-weight-lighter w-128 height-50"
+                                type="text" placeholder="start typing...">
                         </div>
-                        <a href="#" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" class="paper-nav-toggle paper-nav-white active "><i></i></a>
+                        <a href="#" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                            aria-expanded="false" aria-label="Toggle navigation"
+                            class="paper-nav-toggle paper-nav-white active "><i></i></a>
                     </div>
                 </div>
             </div>
@@ -127,17 +96,20 @@ include_once($path);
                             </div>
                         </div>
                         <div class="row">
-                            <ul class="nav nav-material nav-material-white responsive-tab" id="v-pills-tab" role="tablist">
+                            <ul class="nav nav-material nav-material-white responsive-tab" id="v-pills-tab"
+                                role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link active" href="#"><i class="icon icon-list"></i>Todas</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#modalCreateMessage" data-toggle="modal" data-target="#modalCreateMessage">
+                                    <a class="nav-link" href="#modalCreateMessage" data-toggle="modal"
+                                        data-target="#modalCreateMessage">
                                         <i class="icon icon-clipboard-add"></i> Enviar Email
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#modalCreateMessage" data-toggle="modal" data-target="#modalCreateMessage"><i class="icon icon-trash-can"></i>Lixeira</a>
+                                    <a class="nav-link" href="#modalCreateMessage" data-toggle="modal"
+                                        data-target="#modalCreateMessage"><i class="icon icon-trash-can"></i>Lixeira</a>
                                 </li>
                             </ul>
                         </div>
@@ -150,13 +122,17 @@ include_once($path);
                                 <div class="sticky white">
                                     <ul class="nav nav-tabs nav-material">
                                         <li class="nav-item">
-                                            <a class="nav-link p-3 active show" id="w2--tab1" data-toggle="tab" href="#w2-tab1"><i class="icon icon-mail-envelope-closed s-18 text-success"></i>New</a>
+                                            <a class="nav-link p-3 active show" id="w2--tab1" data-toggle="tab"
+                                                href="#w2-tab1"><i
+                                                    class="icon icon-mail-envelope-closed s-18 text-success"></i>New</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link p-3" id="w2--tab2" data-toggle="tab" href="#w2-tab2"><i class="icon icon-star yellow-text"></i>Important</a>
+                                            <a class="nav-link p-3" id="w2--tab2" data-toggle="tab" href="#w2-tab2"><i
+                                                    class="icon icon-star yellow-text"></i>Important</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link p-3" id="w2--tab3" data-toggle="tab" href="#w2-tab3"><i class="icon icon-filter text-danger"></i> Spam</a>
+                                            <a class="nav-link p-3" id="w2--tab3" data-toggle="tab" href="#w2-tab3"><i
+                                                    class="icon icon-filter text-danger"></i> Spam</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -169,7 +145,8 @@ include_once($path);
                                         <div class="card-body">
                                             <div data-toggle="collapse" data-target="#message1">
                                                 <div class="media">
-                                                    <img class="d-flex mr-3 height-50" src="assets/img/dummy/u8.png" alt="Generic placeholder image">
+                                                    <img class="d-flex mr-3 height-50" src="assets/img/dummy/u8.png"
+                                                        alt="Generic placeholder image">
                                                     <div class="media-body">
                                                         mensagens list
                                                     </div>
@@ -189,7 +166,8 @@ include_once($path);
                                         <div class="card-body">
                                             <div data-toggle="collapse" data-target="#message2">
                                                 <div class="media">
-                                                    <img class="d-flex mr-3 height-50" src="assets/img/dummy/u3.png" alt="Generic placeholder image">
+                                                    <img class="d-flex mr-3 height-50" src="assets/img/dummy/u3.png"
+                                                        alt="Generic placeholder image">
                                                     anexos view
                                                 </div>
                                             </div>
@@ -202,32 +180,41 @@ include_once($path);
                     </div>
                 </div>
                 <!--Add New Message Fab Button-->
-                <a href="#modalCreateMessage" data-toggle="modal" data-target="#modalCreateMessage" class="btn-fab btn-fab-md fab-right fab-right-bottom-fixed shadow btn-primary"><i class="icon-add"></i></a>
+                <a href="#modalCreateMessage" data-toggle="modal" data-target="#modalCreateMessage"
+                    class="btn-fab btn-fab-md fab-right fab-right-bottom-fixed shadow btn-primary"><i
+                        class="icon-add"></i></a>
             </div>
             <!--Message Modal-->
-            <div class="modal fade" id="modalCreateMessage" tabindex="-1" role="dialog" aria-labelledby="modalCreateMessage">
+            <div class="modal fade" id="modalCreateMessage" tabindex="-1" role="dialog"
+                aria-labelledby="modalCreateMessage">
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content b-0">
                         <div class="modal-header r-0 bg-primary">
                             <h6 class="modal-title text-white" id="exampleModalLabel">Enviar Nova Mensagem</h6>
-                            <a href="#" data-dismiss="modal" aria-label="Close" class="paper-nav-toggle paper-nav-white active"><i></i></a>
+                            <a href="#" data-dismiss="modal" aria-label="Close"
+                                class="paper-nav-toggle paper-nav-white active"><i></i></a>
                         </div>
                         <div class="modal-body no-p no-b">
-                            <form action="" id="enviar_mensagem" name="enviar_mensagem" method="POST" class="form-horizontal">
+                            <form action="" id="enviar_mensagem" name="enviar_mensagem" method="POST"
+                                class="form-horizontal">
                                 <div class="form-group has-icon m-0">
                                     <i class="icon-subject"></i>
-                                    <input class="form-control form-control-lg r-0 b-0" type="text" name="nome" id="nome" placeholder="Nome">
+                                    <input class="form-control form-control-lg r-0 b-0" type="text" name="nome"
+                                        id="nome" placeholder="Nome">
                                 </div>
                                 <div class="form-group has-icon m-0">
                                     <i class="icon-envelope-o"></i>
-                                    <input class="form-control form-control-lg r-0 b-0" type="text" name="email" id="email" placeholder="Email de destino">
+                                    <input class="form-control form-control-lg r-0 b-0" type="text" name="email"
+                                        id="email" placeholder="Email de destino">
                                 </div>
                                 <div class="b-b"></div>
                                 <div class="form-group has-icon m-0">
                                     <i class="icon-subject"></i>
-                                    <input class="form-control form-control-lg r-0 b-0" type="text" name="subject" id="subject" placeholder="Subject">
+                                    <input class="form-control form-control-lg r-0 b-0" type="text" name="subject"
+                                        id="subject" placeholder="Subject">
                                 </div>
-                                <textarea name="mensagem" id="mensagem" class="form-control r-0 b-0 p-t-40 editor" placeholder="Escreva a mensagem..." rows="17"></textarea>
+                                <textarea name="mensagem" id="mensagem" class="form-control r-0 b-0 p-t-40 editor"
+                                    placeholder="Escreva a mensagem..." rows="17"></textarea>
                             </form>
                         </div>
                         <div class="modal-footer">
@@ -254,47 +241,47 @@ include_once($path);
 
         <!--Swit Alert -->
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-        
-        
+
+
         <script>
-          function sendEmail () {
+        function sendEmail() {
             $.ajax({
-                        method: "POST",
-                        url: "../../view/inbox-emails/script.php",
-                        data: $("form").serialize(),
-                        dataType: "text",
-                        success: function(strMessage) {
-                            $("#message").text(strMessage);
-                            if ($.trim(strMessage) == 'sucesso') {
-                                Swal.fire({
-                                    title: '',
-                                    text: "Email enviado com sucesso!",
-                                    icon: 'success',
-                                    confirmButtonColor: '#3085d6',
-                                    cancelButtonColor: '#d33',
-                                    confirmButtonText: 'OK'
-                                }).then((result) => {
-                                    if (result.isConfirmed) {
-                                        location.reload();
-                                        $('#enviar_mensagem').modal('toggle');
-                                        $('#enviar_mensagem').find('input').val('');
-
-                                    }
-
-                                })
-
-                            } else {
-                                Swal.fire({
-                                    icon: 'error',
-                                    title: 'Oops...',
-                                    text: strMessage,
-
-                                });
+                method: "POST",
+                url: "../../view/inbox-emails/script.php",
+                data: $("form").serialize(),
+                dataType: "text",
+                success: function(strMessage) {
+                    $("#message").text(strMessage);
+                    if ($.trim(strMessage) == 'sucesso') {
+                        Swal.fire({
+                            title: '',
+                            text: "Email enviado com sucesso!",
+                            icon: 'success',
+                            confirmButtonColor: '#3085d6',
+                            cancelButtonColor: '#d33',
+                            confirmButtonText: 'OK'
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                location.reload();
+                                $('#enviar_mensagem').modal('toggle');
+                                $('#enviar_mensagem').find('input').val('');
 
                             }
-                        }
-                    });
-          }
+
+                        })
+
+                    } else {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: strMessage,
+
+                        });
+
+                    }
+                }
+            });
+        }
         </script>
 
         <!--
@@ -302,14 +289,14 @@ include_once($path);
 --- http://writing.colin-gourlay.com/safely-using-ready-before-including-jquery/
 -->
         <script>
-            (function($, d) {
-                $.each(readyQ, function(i, f) {
-                    $(f)
-                });
-                $.each(bindReadyQ, function(i, f) {
-                    $(d).bind("ready", f)
-                })
-            })(jQuery, document)
+        (function($, d) {
+            $.each(readyQ, function(i, f) {
+                $(f)
+            });
+            $.each(bindReadyQ, function(i, f) {
+                $(d).bind("ready", f)
+            })
+        })(jQuery, document)
         </script>
 
         <!--  <script src="../../view/inbox-emails/js/ajax-email-send.js" async defer></script> -->

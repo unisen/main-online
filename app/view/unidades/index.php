@@ -40,53 +40,19 @@ include_once($path);
     <!-- Pre loader -->
     <div id="loader" class="loader">
         <div class="plane-container">
-            <div class="preloader-wrapper big active">
-                            <div class="spinner-layer spinner-blue">
-                                <div class="circle-clipper left">
-                                    <div class="circle"></div>
-                                </div><div class="gap-patch">
-                                <div class="circle"></div>
-                            </div><div class="circle-clipper right">
-                                <div class="circle"></div>
-                            </div>
-                            </div>
+        <div class="preloader-wrapper big active">
+                
+                <div class='box-load'>
+                    <div class='pre'></div>
+                </div>
 
-                            <div class="spinner-layer spinner-red">
-                                <div class="circle-clipper left">
-                                    <div class="circle"></div>
-                                </div><div class="gap-patch">
-                                <div class="circle"></div>
-                            </div><div class="circle-clipper right">
-                                <div class="circle"></div>
-                            </div>
-                            </div>
-
-                            <div class="spinner-layer spinner-yellow">
-                                <div class="circle-clipper left">
-                                    <div class="circle"></div>
-                                </div><div class="gap-patch">
-                                <div class="circle"></div>
-                            </div><div class="circle-clipper right">
-                                <div class="circle"></div>
-                            </div>
-                            </div>
-
-                            <div class="spinner-layer spinner-green">
-                                <div class="circle-clipper left">
-                                    <div class="circle"></div>
-                                </div><div class="gap-patch">
-                                <div class="circle"></div>
-                            </div><div class="circle-clipper right">
-                                <div class="circle"></div>
-                            </div>
-                            </div>
-                        </div>
+            </div>
         </div>
     </div>
     <div id="app">
 
         <script>
-            /*
+        /*
                          *  Add sidebar classes (sidebar-mini sidebar-collapse sidebar-expanded-on-hover) in body tag
                          *  you can remove this script tag and add classes directly to body
                          *  this is only for demo
@@ -99,7 +65,7 @@ include_once($path);
                                 z-index: 1;
                             }
                          */
-            //document.body.className += ' sidebar-mini' + ' sidebar-collapse' + ' sidebar-expanded-on-hover' + ' sidebar-top-offset';
+        //document.body.className += ' sidebar-mini' + ' sidebar-collapse' + ' sidebar-expanded-on-hover' + ' sidebar-top-offset';
         </script>
         <?php
         $path =  $_SERVER['DOCUMENT_ROOT'];
@@ -111,9 +77,12 @@ include_once($path);
                 <div class="collapse" id="navbarToggleExternalContent">
                     <div class="bg-dark pt-2 pb-2 pl-4 pr-2">
                         <div class="search-bar">
-                            <input class="transparent s-24 text-white b-0 font-weight-lighter w-128 height-50" type="text" placeholder="start typing...">
+                            <input class="transparent s-24 text-white b-0 font-weight-lighter w-128 height-50"
+                                type="text" placeholder="start typing...">
                         </div>
-                        <a href="#" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" class="paper-nav-toggle paper-nav-white active "><i></i></a>
+                        <a href="#" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                            aria-expanded="false" aria-label="Toggle navigation"
+                            class="paper-nav-toggle paper-nav-white active "><i></i></a>
                     </div>
                 </div>
             </div>
@@ -171,14 +140,14 @@ include_once($path);
 --- http://writing.colin-gourlay.com/safely-using-ready-before-including-jquery/
 -->
         <script>
-            (function($, d) {
-                $.each(readyQ, function(i, f) {
-                    $(f)
-                });
-                $.each(bindReadyQ, function(i, f) {
-                    $(d).bind("ready", f)
-                })
-            })(jQuery, document)
+        (function($, d) {
+            $.each(readyQ, function(i, f) {
+                $(f)
+            });
+            $.each(bindReadyQ, function(i, f) {
+                $(d).bind("ready", f)
+            })
+        })(jQuery, document)
         </script>
 </body>
 

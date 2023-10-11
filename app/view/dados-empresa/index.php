@@ -40,53 +40,19 @@ include_once($path);
     <!-- Pre loader -->
     <div id="loader" class="loader">
         <div class="plane-container">
-            <div class="preloader-wrapper big active">
-                            <div class="spinner-layer spinner-blue">
-                                <div class="circle-clipper left">
-                                    <div class="circle"></div>
-                                </div><div class="gap-patch">
-                                <div class="circle"></div>
-                            </div><div class="circle-clipper right">
-                                <div class="circle"></div>
-                            </div>
-                            </div>
+        <div class="preloader-wrapper big active">
+                
+                <div class='box-load'>
+                    <div class='pre'></div>
+                </div>
 
-                            <div class="spinner-layer spinner-red">
-                                <div class="circle-clipper left">
-                                    <div class="circle"></div>
-                                </div><div class="gap-patch">
-                                <div class="circle"></div>
-                            </div><div class="circle-clipper right">
-                                <div class="circle"></div>
-                            </div>
-                            </div>
-
-                            <div class="spinner-layer spinner-yellow">
-                                <div class="circle-clipper left">
-                                    <div class="circle"></div>
-                                </div><div class="gap-patch">
-                                <div class="circle"></div>
-                            </div><div class="circle-clipper right">
-                                <div class="circle"></div>
-                            </div>
-                            </div>
-
-                            <div class="spinner-layer spinner-green">
-                                <div class="circle-clipper left">
-                                    <div class="circle"></div>
-                                </div><div class="gap-patch">
-                                <div class="circle"></div>
-                            </div><div class="circle-clipper right">
-                                <div class="circle"></div>
-                            </div>
-                            </div>
-                        </div>
+            </div>
         </div>
     </div>
     <div id="app">
 
         <script>
-            /*
+        /*
                          *  Add sidebar classes (sidebar-mini sidebar-collapse sidebar-expanded-on-hover) in body tag
                          *  you can remove this script tag and add classes directly to body
                          *  this is only for demo
@@ -99,7 +65,7 @@ include_once($path);
                                 z-index: 1;
                             }
                          */
-            //document.body.className += ' sidebar-mini' + ' sidebar-collapse' + ' sidebar-expanded-on-hover' + ' sidebar-top-offset';
+        //document.body.className += ' sidebar-mini' + ' sidebar-collapse' + ' sidebar-expanded-on-hover' + ' sidebar-top-offset';
         </script>
         <?php
         $path =  $_SERVER['DOCUMENT_ROOT'];
@@ -111,9 +77,12 @@ include_once($path);
                 <div class="collapse" id="navbarToggleExternalContent">
                     <div class="bg-dark pt-2 pb-2 pl-4 pr-2">
                         <div class="search-bar">
-                            <input class="transparent s-24 text-white b-0 font-weight-lighter w-128 height-50" type="text" placeholder="start typing...">
+                            <input class="transparent s-24 text-white b-0 font-weight-lighter w-128 height-50"
+                                type="text" placeholder="start typing...">
                         </div>
-                        <a href="#" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" class="paper-nav-toggle paper-nav-white active "><i></i></a>
+                        <a href="#" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                            aria-expanded="false" aria-label="Toggle navigation"
+                            class="paper-nav-toggle paper-nav-white active "><i></i></a>
                     </div>
                 </div>
             </div>
@@ -136,7 +105,8 @@ include_once($path);
                             <div class="col">
                                 <h1 class="s-24">
                                     <i class="icon-pages"></i>
-                                    Dados da Empresa <span class="s-14">Configurações dos Dados da Empresa no Sistema.</span>
+                                    Dados da Empresa <span class="s-14">Configurações dos Dados da Empresa no
+                                        Sistema.</span>
                                 </h1>
                             </div>
                         </div>
@@ -159,35 +129,48 @@ include_once($path);
                                         <div class="form-row">
                                             <div class="col-md-8">
                                                 <div class="form-group m-0">
-                                                    <label for="nome_empresa" class="col-form-label s-12">Nome da Empresa</label>
-                                                    <input name="nome_empresa" class="form-control r-0 light s-12 " type="text" value="<?php echo $empresa_configs->nome_empresa; ?>">
+                                                    <label for="nome_empresa" class="col-form-label s-12">Nome da
+                                                        Empresa</label>
+                                                    <input name="nome_empresa" class="form-control r-0 light s-12 "
+                                                        type="text"
+                                                        value="<?php echo $empresa_configs->nome_empresa; ?>">
                                                 </div>
 
                                                 <div class="form-row">
                                                     <div class="form-group col-6 m-0">
                                                         <label for="cnpj" class="col-form-label s-12">CNPJ</label>
-                                                        <input name="cnpj" class="form-control r-0 light s-12" type="text" value="<?php echo $empresa_configs->cnpj; ?>">
+                                                        <input name="cnpj" class="form-control r-0 light s-12"
+                                                            type="text" value="<?php echo $empresa_configs->cnpj; ?>">
                                                     </div>
                                                     <div class="form-group col-6 m-0">
-                                                        <label for="inscricao_estadual" class="col-form-label s-12">Inscrição Estadual</label>
-                                                        <input name="inscricao_estadual" class="form-control r-0 light s-12" type="text" value="<?php echo $empresa_configs->inscricao_estadual; ?>">
+                                                        <label for="inscricao_estadual"
+                                                            class="col-form-label s-12">Inscrição Estadual</label>
+                                                        <input name="inscricao_estadual"
+                                                            class="form-control r-0 light s-12" type="text"
+                                                            value="<?php echo $empresa_configs->inscricao_estadual; ?>">
                                                     </div>
                                                 </div>
 
                                                 <div class="form-row">
                                                     <div class="form-group col-12 m-0">
-                                                        <label for="endereco" class="col-form-label s-12">Endereço</label>
-                                                        <input name="endereco" class="form-control r-0 light s-12" type="text" value="<?php echo $empresa_configs->endereco; ?>">
+                                                        <label for="endereco"
+                                                            class="col-form-label s-12">Endereço</label>
+                                                        <input name="endereco" class="form-control r-0 light s-12"
+                                                            type="text"
+                                                            value="<?php echo $empresa_configs->endereco; ?>">
                                                     </div>
                                                 </div>
 
                                             </div>
                                             <div class="col-md-3 offset-md-1">
 
-                                                <input hidden="" id="logo_path" name="logo_path" value="<?php echo $empresa_configs->logo_path; ?>">
+                                                <input hidden="" id="logo_path" name="logo_path"
+                                                    value="<?php echo $empresa_configs->logo_path; ?>">
 
-                                                <input hidden="" id="file" name="logo" value="<?php echo $empresa_configs->logo_file; ?>">
-                                                <div class="dropzone dropzone-file-area pt-4 pb-4 dz-clickable" id="fileUpload">
+                                                <input hidden="" id="file" name="logo"
+                                                    value="<?php echo $empresa_configs->logo_file; ?>">
+                                                <div class="dropzone dropzone-file-area pt-4 pb-4 dz-clickable"
+                                                    id="fileUpload">
                                                     <div class="dz-default dz-message">
                                                         <span>Arraste o arquivo da Logo</span>
                                                         <div>Ou Clique para abrir o navegador de arquivos.</div>
@@ -208,7 +191,9 @@ include_once($path);
                                                 <div class="form-group form-float">
                                                     <div class="form-line">
                                                         <label class="form-label">Cidade</label>
-                                                        <input type="text" class="form-control r-0 light s-12" name="cidade" value="<?php echo $empresa_configs->cidade; ?>">
+                                                        <input type="text" class="form-control r-0 light s-12"
+                                                            name="cidade"
+                                                            value="<?php echo $empresa_configs->cidade; ?>">
 
                                                     </div>
                                                 </div>
@@ -219,7 +204,9 @@ include_once($path);
                                                 <div class="form-group form-float">
                                                     <div class="form-line">
                                                         <label class="form-label">Estado</label>
-                                                        <input type="text" class="form-control r-0 light s-12" name="estado" value="<?php echo $empresa_configs->estado; ?>">
+                                                        <input type="text" class="form-control r-0 light s-12"
+                                                            name="estado"
+                                                            value="<?php echo $empresa_configs->estado; ?>">
 
                                                     </div>
                                                 </div>
@@ -228,7 +215,8 @@ include_once($path);
                                                 <div class="form-group form-float">
                                                     <div class="form-line">
                                                         <label class="form-label">Cep</label>
-                                                        <input type="text" class="form-control r-0 light s-12" name="cep" value="<?php echo $empresa_configs->cep; ?>">
+                                                        <input type="text" class="form-control r-0 light s-12"
+                                                            name="cep" value="<?php echo $empresa_configs->cep; ?>">
 
                                                     </div>
                                                 </div>
@@ -239,7 +227,9 @@ include_once($path);
                                                 <div class="form-group form-float">
                                                     <div class="form-line">
                                                         <label class="form-label">Email da Empresa</label>
-                                                        <input type="email" class="form-control r-0 light s-12" name="email_empresa" value="<?php echo $empresa_configs->email_empresa; ?>">
+                                                        <input type="email" class="form-control r-0 light s-12"
+                                                            name="email_empresa"
+                                                            value="<?php echo $empresa_configs->email_empresa; ?>">
 
                                                     </div>
                                                 </div>
@@ -248,7 +238,9 @@ include_once($path);
                                                 <div class="form-group form-float">
                                                     <div class="form-line">
                                                         <label class="form-label">Email Associados</label>
-                                                        <input type="email" class="form-control r-0 light s-12" name="email_empresa_associados" value="<?php echo $empresa_configs->email_empresa_associados; ?>">
+                                                        <input type="email" class="form-control r-0 light s-12"
+                                                            name="email_empresa_associados"
+                                                            value="<?php echo $empresa_configs->email_empresa_associados; ?>">
 
                                                     </div>
                                                 </div>
@@ -257,7 +249,9 @@ include_once($path);
                                         <div class="form-group form-float">
                                             <div class="form-line">
                                                 <label class="form-label">Telefone</label>
-                                                <input type="text" class="form-control r-0 light s-12" name="telefone_empresa" value="<?php echo $empresa_configs->telefone_empresa; ?>">
+                                                <input type="text" class="form-control r-0 light s-12"
+                                                    name="telefone_empresa"
+                                                    value="<?php echo $empresa_configs->telefone_empresa; ?>">
 
                                             </div>
                                         </div>
@@ -265,7 +259,9 @@ include_once($path);
                                         <div class="form-group form-float">
                                             <div class="form-line">
                                                 <label class="form-label">Celular</label>
-                                                <input type="text" class="form-control r-0 light s-12" name="celular_empresa" value="<?php echo $empresa_configs->celular_empresa; ?>">
+                                                <input type="text" class="form-control r-0 light s-12"
+                                                    name="celular_empresa"
+                                                    value="<?php echo $empresa_configs->celular_empresa; ?>">
 
                                             </div>
                                         </div>
@@ -273,7 +269,9 @@ include_once($path);
                                         <div class="form-group form-float">
                                             <div class="form-line">
                                                 <label class="form-label">Website</label>
-                                                <input type="text" class="form-control r-0 light s-12" name="website_empresa" value="<?php echo $empresa_configs->website_empresa; ?>">
+                                                <input type="text" class="form-control r-0 light s-12"
+                                                    name="website_empresa"
+                                                    value="<?php echo $empresa_configs->website_empresa; ?>">
 
                                             </div>
                                         </div>
@@ -284,8 +282,13 @@ include_once($path);
                                                 <p class="salvar-success"><?php echo @$success; ?></p>
                                             </div>
                                         </div>
-                                        <button onclick="salvar_dados()" class="btn btn-success btn-lg toast-action waves-effect" type="submit" name="submit" data-title="Arquivo Salvo" data-message="<?php echo @$success; ?>" data-type="success" data-position-class="toast-top-right">SALVAR</button>
-                                        <button type="button" class="btn btn-primary" onclick="recarregarAPagina()">Atualizar!</button>
+                                        <button onclick="salvar_dados()"
+                                            class="btn btn-success btn-lg toast-action waves-effect" type="submit"
+                                            name="submit" data-title="Arquivo Salvo"
+                                            data-message="<?php echo @$success; ?>" data-type="success"
+                                            data-position-class="toast-top-right">SALVAR</button>
+                                        <button type="button" class="btn btn-primary"
+                                            onclick="recarregarAPagina()">Atualizar!</button>
                                     </form>
                                 </div>
                             </div>
@@ -425,21 +428,22 @@ include_once($path);
         <script src="../../includes/template/assets/js/app.js"></script>
 
         <script>
-            document.getElementById('logo').onchange = function() {
-                alert('Selected file: ' + this.value);
-            };
+        document.getElementById('logo').onchange = function() {
+            alert('Selected file: ' + this.value);
+        };
         </script>
 
         <script>
-            function salvar_dados() {
-                var logo = document.querySelector("#fileUpload > div.dz-preview.dz-complete.dz-success.dz-image-preview > div.dz-image > img");
-                var path = logo.getAttribute('alt');
-                document.getElementById('logo_path').value = path;
-            }
+        function salvar_dados() {
+            var logo = document.querySelector(
+                "#fileUpload > div.dz-preview.dz-complete.dz-success.dz-image-preview > div.dz-image > img");
+            var path = logo.getAttribute('alt');
+            document.getElementById('logo_path').value = path;
+        }
 
-            function recarregarAPagina() {
-                window.location.reload();
-            }
+        function recarregarAPagina() {
+            window.location.reload();
+        }
         </script>
 
 
@@ -448,14 +452,14 @@ include_once($path);
         --- http://writing.colin-gourlay.com/safely-using-ready-before-including-jquery/
         -->
         <script>
-            (function($, d) {
-                $.each(readyQ, function(i, f) {
-                    $(f)
-                });
-                $.each(bindReadyQ, function(i, f) {
-                    $(d).bind("ready", f)
-                })
-            })(jQuery, document)
+        (function($, d) {
+            $.each(readyQ, function(i, f) {
+                $(f)
+            });
+            $.each(bindReadyQ, function(i, f) {
+                $(d).bind("ready", f)
+            })
+        })(jQuery, document)
         </script>
 
         <!-- <script src="js/script.js" async defer></script> -->

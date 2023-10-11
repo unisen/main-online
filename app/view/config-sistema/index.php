@@ -50,53 +50,19 @@ require_once '../../libs/functions.php';
     <!-- Pre loader -->
     <div id="loader" class="loader">
         <div class="plane-container">
-            <div class="preloader-wrapper big active">
-                            <div class="spinner-layer spinner-blue">
-                                <div class="circle-clipper left">
-                                    <div class="circle"></div>
-                                </div><div class="gap-patch">
-                                <div class="circle"></div>
-                            </div><div class="circle-clipper right">
-                                <div class="circle"></div>
-                            </div>
-                            </div>
+        <div class="preloader-wrapper big active">
+                
+                <div class='box-load'>
+                    <div class='pre'></div>
+                </div>
 
-                            <div class="spinner-layer spinner-red">
-                                <div class="circle-clipper left">
-                                    <div class="circle"></div>
-                                </div><div class="gap-patch">
-                                <div class="circle"></div>
-                            </div><div class="circle-clipper right">
-                                <div class="circle"></div>
-                            </div>
-                            </div>
-
-                            <div class="spinner-layer spinner-yellow">
-                                <div class="circle-clipper left">
-                                    <div class="circle"></div>
-                                </div><div class="gap-patch">
-                                <div class="circle"></div>
-                            </div><div class="circle-clipper right">
-                                <div class="circle"></div>
-                            </div>
-                            </div>
-
-                            <div class="spinner-layer spinner-green">
-                                <div class="circle-clipper left">
-                                    <div class="circle"></div>
-                                </div><div class="gap-patch">
-                                <div class="circle"></div>
-                            </div><div class="circle-clipper right">
-                                <div class="circle"></div>
-                            </div>
-                            </div>
-                        </div>
+            </div>
         </div>
     </div>
     <div id="app">
 
         <script>
-            /*
+        /*
                          *  Add sidebar classes (sidebar-mini sidebar-collapse sidebar-expanded-on-hover) in body tag
                          *  you can remove this script tag and add classes directly to body
                          *  this is only for demo
@@ -109,7 +75,7 @@ require_once '../../libs/functions.php';
                                 z-index: 1;
                             }
                          */
-            //document.body.className += ' sidebar-mini' + ' sidebar-collapse' + ' sidebar-expanded-on-hover' + ' sidebar-top-offset';
+        //document.body.className += ' sidebar-mini' + ' sidebar-collapse' + ' sidebar-expanded-on-hover' + ' sidebar-top-offset';
         </script>
         <?php
         $path =  $_SERVER['DOCUMENT_ROOT'];
@@ -121,9 +87,12 @@ require_once '../../libs/functions.php';
                 <div class="collapse" id="navbarToggleExternalContent">
                     <div class="bg-dark pt-2 pb-2 pl-4 pr-2">
                         <div class="search-bar">
-                            <input class="transparent s-24 text-white b-0 font-weight-lighter w-128 height-50" type="text" placeholder="start typing...">
+                            <input class="transparent s-24 text-white b-0 font-weight-lighter w-128 height-50"
+                                type="text" placeholder="start typing...">
                         </div>
-                        <a href="#" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" class="paper-nav-toggle paper-nav-white active "><i></i></a>
+                        <a href="#" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                            aria-expanded="false" aria-label="Toggle navigation"
+                            class="paper-nav-toggle paper-nav-white active "><i></i></a>
                     </div>
                 </div>
             </div>
@@ -147,18 +116,26 @@ require_once '../../libs/functions.php';
                             </div>
                         </div>
                         <div class="row justify-content-between">
-                            <ul class="nav nav-material nav-material-white responsive-tab" id="v-pills-tab" role="tablist">
+                            <ul class="nav nav-material nav-material-white responsive-tab" id="v-pills-tab"
+                                role="tablist">
                                 <li>
-                                    <a class="nav-link active" id="v-pills-all-tab" data-toggle="pill" href="#v-pills-all" role="tab" aria-controls="v-pills-all"><i class="icon icon-home2"></i> Registros de Log</a>
+                                    <a class="nav-link active" id="v-pills-all-tab" data-toggle="pill"
+                                        href="#v-pills-all" role="tab" aria-controls="v-pills-all"><i
+                                            class="icon icon-home2"></i> Registros de Log</a>
                                 </li>
                                 <li>
-                                    <a class="nav-link" id="v-pills-buyers-tab" data-toggle="pill" href="#v-pills-buyers" role="tab" aria-controls="v-pills-buyers"><i class="icon icon-face"></i> Configurações Gerais</a>
+                                    <a class="nav-link" id="v-pills-buyers-tab" data-toggle="pill"
+                                        href="#v-pills-buyers" role="tab" aria-controls="v-pills-buyers"><i
+                                            class="icon icon-face"></i> Configurações Gerais</a>
                                 </li>
                                 <li>
-                                    <a class="nav-link" id="v-pills-sellers-tab" data-toggle="pill" href="#v-pills-sellers" role="tab" aria-controls="v-pills-sellers"><i class="icon  icon-local_shipping"></i> Paths do Sistema</a>
+                                    <a class="nav-link" id="v-pills-sellers-tab" data-toggle="pill"
+                                        href="#v-pills-sellers" role="tab" aria-controls="v-pills-sellers"><i
+                                            class="icon  icon-local_shipping"></i> Paths do Sistema</a>
                                 </li>
                                 <li class="float-right">
-                                    <a href="#modalNovoAssociado" data-toggle="modal" data-target="#modalNovoAssociado" class="nav-link"><i class="icon icon-plus-circle"></i> Instalação</a>
+                                    <a href="#modalNovoAssociado" data-toggle="modal" data-target="#modalNovoAssociado"
+                                        class="nav-link"><i class="icon icon-plus-circle"></i> Instalação</a>
                                 </li>
                             </ul>
                         </div>
@@ -166,7 +143,8 @@ require_once '../../libs/functions.php';
                 </header>
                 <div class="container-fluid animatedParent animateOnce">
                     <div class="tab-content my-3" id="v-pills-tabContent">
-                        <div class="tab-pane animated fadeInUpShort show active" id="v-pills-all" role="tabpanel" aria-labelledby="v-pills-all-tab">
+                        <div class="tab-pane animated fadeInUpShort show active" id="v-pills-all" role="tabpanel"
+                            aria-labelledby="v-pills-all-tab">
 
 
 
@@ -193,7 +171,8 @@ require_once '../../libs/functions.php';
 
 
                         </div>
-                        <div class="tab-pane animated fadeInUpShort" id="v-pills-buyers" role="tabpanel" aria-labelledby="v-pills-buyers-tab">
+                        <div class="tab-pane animated fadeInUpShort" id="v-pills-buyers" role="tabpanel"
+                            aria-labelledby="v-pills-buyers-tab">
                             <div class="row my-3">
                                 <div class="col-md-12">
                                     <div class="card r-0 shadow">
@@ -206,7 +185,8 @@ require_once '../../libs/functions.php';
                             </div>
 
                         </div>
-                        <div class="tab-pane animated fadeInUpShort" id="v-pills-sellers" role="tabpanel" aria-labelledby="v-pills-sellers-tab">
+                        <div class="tab-pane animated fadeInUpShort" id="v-pills-sellers" role="tabpanel"
+                            aria-labelledby="v-pills-sellers-tab">
                             <div class="row">
                                 <div class="col-md-3 mb-3">
                                     <div class="card no-b p-3">
@@ -693,7 +673,9 @@ require_once '../../libs/functions.php';
                     </div>
                 </div>
                 <!--Add New Message Fab Button-->
-                <a href="panel-page-users-create.html" class="btn-fab btn-fab-md fab-right fab-right-bottom-fixed shadow btn-primary btn-flutuante"><i class="icon-add"></i></a>
+                <a href="panel-page-users-create.html"
+                    class="btn-fab btn-fab-md fab-right fab-right-bottom-fixed shadow btn-primary btn-flutuante"><i
+                        class="icon-add"></i></a>
             </div>
 
 
@@ -753,7 +735,7 @@ require_once '../../libs/functions.php';
         <script src="js/tble_click_associados.js"></script>
         <script src="js/ajax-script-associado.js"></script> -->
 
-        
+
 
         <!--  Script Edit Logs  -->
         <script src="js/edit-click-logs.js"></script>
@@ -764,7 +746,7 @@ require_once '../../libs/functions.php';
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
 
-<!--         <script>
+        <!--         <script>
             $(document).ready(function() {
                 $('#tbl_clientes').DataTable({
                     "responsive": true,
@@ -797,7 +779,7 @@ require_once '../../libs/functions.php';
             });
         </script> -->
 
-<!--         <script>
+        <!--         <script>
             $(document).ready(function() {
 
              var table = $('#tbl_logs').DataTable({
@@ -833,15 +815,15 @@ require_once '../../libs/functions.php';
 --- Footer Part - Use Jquery anywhere at page.
 --- http://writing.colin-gourlay.com/safely-using-ready-before-including-jquery/
 -->
-<script>
-            (function($, d) {
-                $.each(readyQ, function(i, f) {
-                    $(f)
-                });
-                $.each(bindReadyQ, function(i, f) {
-                    $(d).bind("ready", f)
-                })
-            })(jQuery, document)
+        <script>
+        (function($, d) {
+            $.each(readyQ, function(i, f) {
+                $(f)
+            });
+            $.each(bindReadyQ, function(i, f) {
+                $(d).bind("ready", f)
+            })
+        })(jQuery, document)
         </script>
 
 
