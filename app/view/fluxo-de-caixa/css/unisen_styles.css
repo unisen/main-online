@@ -31,7 +31,9 @@ tr {
 /* #container-cash {
     display: contents !important;
 } */
-
+#tbl_financeiro_cash > thead > tr > th.sorting_desc {
+    width: 5% !important;
+}   
 
 
 @media only screen and (min-width: 1024px) {
@@ -62,3 +64,12 @@ tr {
         display: contents; 
     } */
   }
+
+  
+@media only screen and (max-width: 600px) {
+    #tbl_financeiro_cash > tbody > tr > td:nth-child(5),
+    #tbl_financeiro_cash > thead > tr > th:nth-child(5) {
+        display: block !important;
+    }
+    
+}

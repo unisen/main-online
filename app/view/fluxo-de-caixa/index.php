@@ -293,22 +293,22 @@ include_once($path);
                     [0, 'desc']
                 ],
                 columnDefs: [{
-                        width: "10%",
+                        width: "100%",
                         responsivePriority: 1,
                         targets: [0, 4]
                     },
                     {
-                        width: '90%',
+                        width: '20%',
                         responsivePriority: 2,
-                        targets: 3
+                        targets: 11
                     },
                     {
                         responsivePriority: 3,
-                        targets: 6
+                        targets: 10
                     },
                     {
                         responsivePriority: 4,
-                        targets: 7
+                        targets: 8
                     }
 
                 ],
