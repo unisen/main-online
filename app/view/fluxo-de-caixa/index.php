@@ -286,8 +286,7 @@ include_once($path);
                     'url': 'datatable.php'
                 },
                 'columns': [{
-                        data: 'id',
-                        className: "dlinecashitem"
+                        data: 'id'
                     },
                     {
                         data: 'mes',
@@ -358,12 +357,12 @@ include_once($path);
                     [0, 'desc']
                 ],
                 columnDefs: [{
-                        width: "25%",
+                        width: "10%",
                         responsivePriority: 1,
-                        targets: 4
+                        targets: [0,4]
                     },
                     {
-                        width: '15%',
+                        width: '90%',
                         responsivePriority: 2,
                         targets: 3
                     },

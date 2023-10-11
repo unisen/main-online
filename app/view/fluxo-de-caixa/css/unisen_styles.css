@@ -50,7 +50,9 @@ tr {
 }
 
 
-
+/* #container-cash {
+    display: contents !important;
+} */
 
 
 
@@ -64,11 +66,15 @@ tr {
         padding-left: 3% !important;
         position: relative;
         top: -4px;
-        margin-top: 3px;
+        margin-top: 1px;
     }
 
     #tbl_financeiro_cash td {
         cursor: pointer;
+    }
+
+    #tbl_financeiro_cash_wrapper {
+        margin-top: 10px;
     }
 
     /* #container-cash {
