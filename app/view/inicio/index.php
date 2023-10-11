@@ -257,6 +257,20 @@ include_once($path);
                                                     
                                                     require_once '../../config/database/conexao-unisen.php';
 
+                                                    function converteDinheiro($num){
+                                                                                        
+                                                        $str = (string)$num;
+                                                        $str = str_replace(",",".",$str);
+                                                        //echo $str;
+                                                        $ntotal = number_format($str,2);
+                                                        $arrNum = explode(".",$ntotal);
+                                                        $esquerdo = str_replace(",",".",$arrNum[0]);
+                                                        $direito = $arrNum[1];
+                                                        
+                                                        $money = $esquerdo . "," . $direito;
+                                                        return $money;   
+                                                    }
+
                                                     $sql = "SELECT `mes` FROM `vmvalpgto_mes`";
                                                     $financeiro_cash = mysqli_query($con_unisen, $sql);
                                                     //print_r($fluxo_de_caixa);
@@ -345,14 +359,14 @@ include_once($path);
                                                             {   label:'PAGAR',
                                                                 fill: true,
                                                                 backgroundColor: 'rgba(50,141,255,.2)',
-                                                                borderColor: '#328dff',
-                                                                pointBorderColor: '#328dff',
+                                                                borderColor: 'blue',
+                                                                pointBorderColor: 'blue',
                                                                 pointBackgroundColor: '#fff',
                                                                 pointBorderWidth: 2,
                                                                 borderWidth: 1,
                                                                 borderJoinStyle: 'miter',
-                                                                pointHoverBackgroundColor: '#328dff',
-                                                                pointHoverBorderColor: '#328dff',
+                                                                pointHoverBackgroundColor: 'blue',
+                                                                pointHoverBorderColor: 'blue',
                                                                 pointHoverBorderWidth: 1,
                                                                 pointRadius: 3,
                                                                 
@@ -361,15 +375,15 @@ include_once($path);
                                                                 label:'RECEBER',
                                                                 fill: false,
                                                                 borderDash: [5, 5],
-                                                                backgroundColor: 'rgba(87,115,238,.3)',
-                                                                borderColor: '#2979ff',
-                                                                pointBorderColor: '#2979ff',
-                                                                pointBackgroundColor: '#2979ff',
+                                                                backgroundColor: 'red',
+                                                                borderColor: 'red',
+                                                                pointBorderColor: 'red',
+                                                                pointBackgroundColor: 'red',
                                                                 pointBorderWidth: 2,
                                                 
                                                                 borderWidth: 1,
                                                                 borderJoinStyle: 'miter',
-                                                                pointHoverBackgroundColor: '#2979ff',
+                                                                pointHoverBackgroundColor: 'red',
                                                                 pointHoverBorderColor: '#fff',
                                                                 pointHoverBorderWidth: 1,
                                                                 pointRadius: 3,
