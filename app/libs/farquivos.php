@@ -251,3 +251,34 @@ function removeFiles($target) {
 
 
 //$path = "teste/46327CE";
+
+
+/**
+ *  Renomeia todos os documentos da pasta cadastrante 
+ *  se houver mudança no Nome Completo do Cadastrante
+ *  
+ *  Vars:
+ *  - $diretorio = 'cadastrantes';
+ *  - $pasta_cadastrante = "18720GO"; // CRM Completo do Cadastrante
+ *  - $path_folder = "$diretorio/" . $pasta_cadastrante;
+ * 
+ *  - $lista_docs lista original de documentos gerada pela
+ *    função: $cadastrante_docs = listar_documentos($path);
+ * 
+ *  - $new_name  = 'Novo NOME COMPLETO DO CADASTRANTE'
+ * 
+ */
+function rename_all_documents($new_name, $path_folder) {
+    $lista_docs = listar_documentos($path_folder);
+
+    $lista_docs_new_names = array();
+    foreach ($lista_docs as $itemDoc) {                        
+        $docSplit = explode(" - ", $itemDoc);       
+        $nomeDoc = $docSplit[1];
+        $new_doc_name = $new_name . ' - ' . $nomeDoc;
+        array_push($lista_docs_new_names, $new_doc_name);
+        rename("$path_folder/$itemDoc","$path_folder/$new_doc_name");         
+    }
+    return $lista_docs_new_names;
+}
+

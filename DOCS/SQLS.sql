@@ -121,7 +121,6 @@ FROM `cash;
 SELECT `Vencimento`,`Data Pgto`,SUM(`Valor Titulo`) as total_vtitulo, SUM(`Valor Pago`) as total_vpgto FROM `cash_teste` WHERE `Data Pgto` >= '2023-09-01' GROUP BY `Data Pgto` ORDER BY `Data Pgto` DESC;
 
 
-SELECT *, CAST(`Valor Titulo` AS float), FORMAT(`Valor Pago`,'C','pt-br') FROM cash_teste;
-
+/* SELECT *, CAST(`Valor Titulo` AS float), FORMAT(`Valor Pago`,'C','pt-br') FROM cash_teste; */
 
 

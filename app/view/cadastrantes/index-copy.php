@@ -324,7 +324,7 @@ require_once '../../DAO/controllers/CadastranteDAO.php';
         <script src="js/upload-arquivos.js"></script>
 
         <!--Swit Alert -->
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <script src="../../includes/plugins/sweetalert2@9.js"></script>
 
 
         <!-- INICIA O DATATABLE cadastrante -->

@@ -356,7 +356,7 @@ if (!isset($_SESSION['loggedin']) && $_SESSION['loggedin'] !== false) {
         <!-- <script src="../../includes/plugins/jquery/jquery.min.js"></script> -->
 
         <!--Swit Alert -->
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <script src="../../includes/plugins/sweetalert2@9.js"></script>
 
         <script src="js/tble_click_clientes.js"></script>
         <script src="js/ajax-script-cliente.js"></script>

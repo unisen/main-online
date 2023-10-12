@@ -82,7 +82,7 @@ include_once($path);
         <!-- AdminLTE for demo purposes -->
         <script src="../../../../includes/dist/js/demo.js"></script>
         <!--Swit Alert -->
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <script src="../../includes/plugins/sweetalert2@9.js"></script>
 
 </body>
 

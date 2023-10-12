@@ -316,7 +316,7 @@ require_once './controllers/ClienteDAO.php';
         <!--  <script src="js/jquery-3.5.1.js"></script> -->
 
         <!--Swit Alert -->
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <script src="../../includes/plugins/sweetalert2@9.js"></script>
 
         <script src="js/tble_click_clientes.js"></script>
         <script src="js/ajax-script-cliente.js"></script>

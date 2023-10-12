@@ -240,7 +240,7 @@ include_once($path);
         <script src="../../includes/template/assets/js/app.js"></script>
 
         <!--Swit Alert -->
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <script src="../../includes/plugins/sweetalert2@9.js"></script>
 
 
         <script>

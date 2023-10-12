@@ -14,7 +14,7 @@
     Enviar!
 </button>
     <!--Swit Alert -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="../../includes/plugins/sweetalert2@9.js"></script>
     <script>
         function sendEmail(id, nome, tomador, email, crm, cpf, msgResposta) {
 

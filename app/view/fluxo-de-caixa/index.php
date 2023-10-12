@@ -109,17 +109,12 @@ include_once($path);
 
                     <div class="col-md-12">
 
-
-
                         <!-- ADD DATATABLE CADASTRANTES EM VERIFICAÇÃO -->
                         <?php
                                     $path = dirname(__FILE__);
                                     $path .= '/tableCash.php';
                                     include_once($path);
                                     ?>
-
-
-
                     </div>
 
                 </div>
@@ -153,7 +148,7 @@ include_once($path);
         <script src="../../includes/template/assets/js/app.js"></script>
 
         <!--Swit Alert -->
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <script src="../../includes/plugins/sweetalert2@9.js"></script>
 
         <!-- DataTables -->
         <script src="../../includes/plugins/datatables/jquery.dataTables.min.js"></script>
@@ -170,8 +165,6 @@ include_once($path);
         <script src="../../includes/plugins/vfs_fonts.js"></script>
         <script src="../../includes/plugins/buttons.html5.min.js"></script>
         <script src="../../includes/plugins/buttons.print.min.js"></script>
-
-
         <script type="text/javascript" src="../../includes/plugins/moment.min.js">
         </script>
 
@@ -336,19 +329,16 @@ include_once($path);
                 var currentRow = $(this).closest("tr");
                 //var col1=currentRow.find("td:eq(0)").text(); 
                 //var data = table.row(this).data();
-
                 $('#editar_id').val(currentRow.find("td:eq(0)").text());
                 $('#editar_mes').val(currentRow.find("td:eq(1)").text());
                 $('#editar_tipo').val(currentRow.find("td:eq(2)").text());
                 $('#editar_nfcpf').val(currentRow.find("td:eq(3)").text());
                 $('#editar_cliente').val(currentRow.find("td:eq(4)").text());
-
                 $('#editar_ccusto').val(currentRow.find("td:eq(5)").text());
                 $('#editar_pcontas').val(currentRow.find("td:eq(6)").text());
                 $('#editar_banco').val(currentRow.find("td:eq(7)").text());
                 $('#editar_vencimento').val(currentRow.find("td:eq(8)").text());
                 $('#editar_datapgto').val(currentRow.find("td:eq(9)").text());
-
                 $('#editar_valortit').val(currentRow.find("td:eq(10)").text());
                 $('#editar_valorpgto').val(currentRow.find("td:eq(11)").text());
                 $('#editar_detalhe').val(currentRow.find("td:eq(12)").text());
